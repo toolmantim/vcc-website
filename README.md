@@ -1,10 +1,13 @@
-# vcc-website
+# Victorian Climbing Club Website
 
-New website for the Victorian Climbing Club
+New website for the Victorian Climbing Club :muscle:, by [Tim Lucas](https://github.com/toolmantim) & [Josh Bassett](https://github.com/nullobject)
 
-## Setup
+[![Arapiles by Glenn Tempest](http://i.imgur.com/jynMzO8.jpg)](http://osp.com.au/?p=294)
 
-* `docker-compose up` to start it all up
-* `open "http://$(boot2docker ip):8080"` to open the browser
-* Create the site and user
-* Activate the VCC theme
+*[Arapiles by Glenn Tempest](http://osp.com.au/?p=294)*
+
+## Getting Started
+
+* `docker-compose up`
+* `open "http://$(boot2docker ip):8080"` and setup the new site
+* `open "http://$(boot2docker ip):8080/wp-admin/themes.php?theme=vcc"` and activate the VCC site theme
