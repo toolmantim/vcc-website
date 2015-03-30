@@ -2,7 +2,9 @@
 
 New website for the Victorian Climbing Club
 
-## Developing
+## Setup
 
 * `docker-compose up` to start it all up
-* `docker exec -i -t vccwebsite_wordpress_1 bash` to load up bash inside the wordpress container
+* `open "http://$(boot2docker ip):8080"` to open the browser
+* Create the site and user
+* Activate the VCC theme
