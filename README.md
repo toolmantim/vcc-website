@@ -6,6 +6,40 @@ New website for the Victorian Climbing Club :muscle:, by [Tim Lucas](https://git
 
 ## Getting Started (OSX)
 
-* `docker-compose up`
-* `open "http://$(boot2docker ip):8080"` and setup the new site
-* `open "http://$(boot2docker ip):8080/wp-admin/themes.php?theme=vcc"` and activate the VCC site theme
+Get started:
+
+* `docker-compose build && docker-compose up`
+* `docker exec -i $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -pexample wordpress' < exports/db.sql`
+* `open "http://$(boot2docker ip):8080"`
+* `open "http://$(boot2docker ip):8080"/wp-admin` (admin/rIphs0ach2coP1Cyuc0Ij3soM7rYin4V)
+
+Start a bash prompt in the container:
+
+* `docker exec -it $(docker-compose ps -q wordpress) bash`
+
+To start a MySQL prompt:
+
+* `docker exec -it $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -uroot -pexample'`
+
+## Importing Content
+
+Import the content:
+
+* `docker exec -it $(docker-compose ps -q wordpress) wp plugin install wordpress-importer`
+* `docker exec -it $(docker-compose ps -q wordpress) wp plugin activate wordpress-importer`
+* `docker exec -it $(docker-compose ps -q wordpress) wp import --authors=create exports/file.xml` (add `--skip=nav_menu_item` if re-importing otherwise you'll get dupe items in the main menu)
+
+## Style Development
+
+```
+npm install -g node-sass
+node-sass -w theme/sass/style.scss theme/style.css
+```
+
+## Dump the database
+
+* `docker exec -it $(docker-compose ps -q db) mysqldump -pexample wordpress > exports/db.sql`
+
+## Load the database
+
+* `docker exec -i $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -pexample wordpress' < exports/db.sql`

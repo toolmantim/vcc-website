@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Wrapper for wp-cli that adds --allow-root to all commands
+
+exec wp-cli.phar --allow-root "$@"

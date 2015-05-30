@@ -6,6 +6,7 @@ wordpress:
     - 8080:80
   volumes:
     - theme:/var/www/html/wp-content/themes/vcc
+    - exports:/var/www/html/exports
 db:
   image: mariadb
   environment:
