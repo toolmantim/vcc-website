@@ -31,9 +31,10 @@ Import the content:
 
 ## Style Development
 
-```
-npm install -g node-sass
-node-sass -w theme/sass/style.scss theme/style.css
+```bash
+npm install
+./node_modules/.bin/gulp styles
+./node_modules/.bin/gulp styles:watch
 ```
 
 ## Dump the database
