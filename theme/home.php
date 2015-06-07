@@ -9,7 +9,18 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <p>The home page!</p>
+      <h3>News</h3>
+
+      <?php
+        while (have_posts()) {
+          the_post();
+          get_template_part('content', get_post_format());
+        }
+      ?>
+
+      <h3>Events</h3>
+
+      TODO
     </main>
   </div>
 
