@@ -36,11 +36,3 @@ npm install
 ./node_modules/.bin/gulp styles
 ./node_modules/.bin/gulp styles:watch
 ```
-
-## Dump the database
-
-* `docker exec -it $(docker-compose ps -q db) mysqldump -pexample wordpress > exports/db.sql`
-
-## Load the database
-
-* `docker exec -i $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -pexample wordpress' < exports/db.sql`
