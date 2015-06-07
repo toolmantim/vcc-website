@@ -102,6 +102,9 @@ add_action( 'widgets_init', 'vcc_widgets_init' );
 function vcc_scripts() {
 	wp_enqueue_style( 'vcc-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'vcc-es6-shim', get_template_directory_uri() . '/js/es6-shim.min.js', array(), '2015-06-07', true );
+	wp_enqueue_script( 'vcc-header-photos', get_template_directory_uri() . '/js/header_photos.js', array(), '2015-06-07', true );
+
 	// wp_enqueue_script( 'vcc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	// wp_enqueue_script( 'vcc-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

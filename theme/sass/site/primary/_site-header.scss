@@ -32,7 +32,7 @@
 .site-header__branding__name {
   font-size: 37px;
   line-height: 1;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   padding-top: 10px;
   a:before {
     content: ' ';
@@ -63,7 +63,9 @@
     text-decoration: none;
     padding: 5px 10px;
     line-height: 1;
-    &:hover { background-color: black; }
+    transition: background-color 150ms;
+    background-color: rgba(black, .25);
+    &:hover { background-color: transparent; }
   }
   li {
     display: inline;
@@ -79,9 +81,37 @@
   figure { margin: 0; }
 }
 
-.site-header__photos__photo__img-container {
-  display: block;
+.site-header__photos__selector {
   position: relative;
+  z-index: 3;
+}
+
+.site-header__photos__selector__link {
+  $border-width: 3px;
+  display: inline-block;
+  width: 20px - $border-width;
+  height: 20px - $border-width;
+  border: $border-width solid white;
+  border-radius: 50%;
+  transition: background-color 150ms;
+  &[data-photo-selected], &[data-photo-selected]:hover { background-color: white; }
+  &:hover { background-color: rgba(white, .5); }
+}
+
+.site-header__photos__photo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s;
+  &[data-photo-selected] { opacity: 1; }
+  &[data-photo-hidden]   { opacity: 0; }
+}
+
+.site-header__photos__photo__img-container {
+  position: relative;
+  display: block;
   &:before {
     content: ' ';
     position: absolute;
