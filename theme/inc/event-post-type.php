@@ -6,7 +6,11 @@
  */
 
 function register_events_post_type() {
-  $args = array('public' => true, 'label' => 'Events');
+  $args = array(
+    'public' => true,
+    'label' => 'Events',
+    'supports' => array('title', 'editor')
+  );
   register_post_type('event', $args);
 }
 
