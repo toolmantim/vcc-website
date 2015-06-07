@@ -23,8 +23,7 @@ To start a MySQL prompt:
 
 ## Importing Content
 
-Import the content:
-
+* `docker exec -it $(docker-compose ps -q wordpress) wp theme activate vcc`
 * `docker exec -it $(docker-compose ps -q wordpress) wp plugin install wordpress-importer`
 * `docker exec -it $(docker-compose ps -q wordpress) wp plugin activate wordpress-importer`
 * `docker exec -it $(docker-compose ps -q wordpress) wp import --authors=create exports/file.xml` (add `--skip=nav_menu_item` if re-importing otherwise you'll get dupe items in the main menu)
