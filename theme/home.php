@@ -20,7 +20,15 @@ get_header(); ?>
 
       <h3>Events</h3>
 
-      TODO
+      <?php
+        $args = array('post_type' => 'event', 'posts_per_page' => 10);
+        $result = new WP_Query($args);
+
+        while ($result->have_posts()) {
+          $result->the_post();
+          get_template_part('content-event', get_post_format());
+        }
+      ?>
     </main>
   </div>
 
