@@ -28,6 +28,10 @@ To start a MySQL prompt:
 * `docker exec -it $(docker-compose ps -q wordpress) wp plugin activate wordpress-importer`
 * `docker exec -it $(docker-compose ps -q wordpress) wp import --authors=create exports/file.xml` (add `--skip=nav_menu_item` if re-importing otherwise you'll get dupe items in the main menu)
 
+## Exporting Content
+
+* `docker exec -it $(docker-compose ps -q wordpress) wp export --dir=/var/www/html/exports`
+
 ## Style Development
 
 ```bash
