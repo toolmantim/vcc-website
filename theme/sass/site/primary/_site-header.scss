@@ -38,7 +38,9 @@
 .site-header__photos__photo__caption__inner {
   height: 100%;
   position: relative;
-  max-width: 1000px;
+  max-width: $size__max-content-width;
+  padding-left: $size__content-width-padding;
+  padding-right: $size__content-width-padding;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,7 +81,7 @@
 .site-header__nav {
   position: absolute;
   bottom: 40px;
-  z-index: 2;
+  z-index: 3;
   font-size: 21px;
   font-weight: 700;
   ul, li { margin: 0; padding: 0; list-style: none; }
@@ -91,7 +93,6 @@
     padding: 8px 10px;
     line-height: 1;
     transition: background-color 150ms;
-    background-color: rgba(#404040, .75);
     &:hover { background-color: #404040; }
   }
   li {
@@ -113,7 +114,7 @@
   position: absolute;
   z-index: 3;
   bottom: 9em;
-  right: 0;
+  right: $size__content-width-padding;
 }
 
 .site-header__photos-selector__button {
