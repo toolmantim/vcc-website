@@ -5,18 +5,18 @@
   var photos = photosContainer.querySelectorAll('.site-header__photos__photo');
 
   var photosSelector = document.querySelector('.site-header__photos-selector');
-  var photosLinks = photosSelector.querySelectorAll('.site-header__photos-selector__link');
+  var photosButtons = photosSelector.querySelectorAll('.site-header__photos-selector__button');
 
-  Array.from(photosLinks).forEach(function(link) {
-    link.addEventListener('click', function(event) {
+  Array.from(photosButtons).forEach(function(button) {
+    button.addEventListener('click', function(event) {
       event.preventDefault();
-      selectPhoto(parseInt(link.getAttribute('data-photo-index')));
+      selectPhoto(parseInt(button.getAttribute('data-photo-index')));
     });
   });
 
   function selectPhoto(index) {
-    Array.from(photosLinks).forEach(deselectLink);
-    selectLink(photosLinks[index]);
+    Array.from(photosButtons).forEach(deselectLink);
+    selectLink(photosButtons[index]);
 
     Array.from(photos).forEach(hidePhoto);
     showPhoto(photos[index]);
@@ -32,11 +32,11 @@
     photo.setAttribute('data-photo-selected', true);
   }
 
-  function deselectLink(link) {
-    link.removeAttribute('data-photo-selected');
+  function deselectLink(button) {
+    button.removeAttribute('data-photo-selected');
   }
 
-  function selectLink(link) {
-    link.setAttribute('data-photo-selected', true);
+  function selectLink(button) {
+    button.setAttribute('data-photo-selected', true);
   }
 })();

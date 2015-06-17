@@ -116,18 +116,24 @@
   right: 0;
 }
 
-.site-header__photos-selector__link {
+.site-header__photos-selector__button {
+  $button-size: 25px;
   $border-width: 3px;
   display: block;
-  width: 20px - $border-width;
-  height: 20px - $border-width;
+  background: transparent;
+  padding: 0;
+  width: $button-size - $border-width;
+  height: $button-size - $border-width;
   border: $border-width solid white;
   border-radius: 50%;
   transition: background-color 150ms;
   &[data-photo-selected], &[data-photo-selected]:hover { background-color: white; }
-  &:hover { background-color: rgba(white, .5); }
-  + .site-header__photos-selector__link {
-    margin-top: 5px;
+  &:hover, &:active {
+    background-color: rgba(white, .5);
+    border-color: white;
+  }
+  + .site-header__photos-selector__button {
+    margin-top: 8px;
   }
 }
 

@@ -87,7 +87,7 @@
 
         <div class="site-header__photos-selector">
           <? foreach ($header_photos as $index => $photo): ?>
-            <a href="#" data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__link" <? if ($index == 0): ?>data-photo-selected<? endif ?>></a>
+            <button data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__button" <? if ($index == 0): ?>data-photo-selected<? endif ?>></button>
           <? endforeach ?>
         </div>
       </div>
