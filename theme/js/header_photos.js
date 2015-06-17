@@ -4,8 +4,8 @@
   var photosContainer = document.querySelector('.site-header__photos');
   var photos = photosContainer.querySelectorAll('.site-header__photos__photo');
 
-  var photosSelector = document.querySelector('.site-header__photos__selector');
-  var photosLinks = photosSelector.querySelectorAll('.site-header__photos__selector__link');
+  var photosSelector = document.querySelector('.site-header__photos-selector');
+  var photosLinks = photosSelector.querySelectorAll('.site-header__photos-selector__link');
 
   Array.from(photosLinks).forEach(function(link) {
     link.addEventListener('click', function(event) {

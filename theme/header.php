@@ -6,6 +6,58 @@
  *
  * @package Victorian Climbing Club
  */
+
+  $header_photos = [
+    [
+      "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
+      "who" => "Mary, Joe and Jane ",
+      "trip" => [
+        "title" => "Summerday Valley Trip #3, February 2015",
+        "path"  => "/2015/02/summerday-valley"
+      ],
+      "photographer" => [
+        "name" => "Ed Dunens",
+        "url" => "https://flickr.com/photos/ed"
+      ]
+    ],
+    [
+      "path" => "/wp-content/themes/vcc/images/header-photos/2.jpg",
+      "who" => "Elvis and Presley",
+      "trip" => [
+        "title" => "Another Trip #3, January 2015",
+        "path"  => "/2015/01/another-trip"
+      ],
+      "photographer" => [
+        "name" => "Monkey Magic",
+        "url" => "https://flickr.com/photos/ed"
+      ]
+    ],
+    [
+      "path" => "/wp-content/themes/vcc/images/header-photos/3.jpg",
+      "who" => "Jimmy James",
+      "trip" => [
+        "title" => "Queens Birthday Weekend, June 2015",
+        "path"  => "/2015/05/queens-birthday-weekend"
+      ],
+      "photographer" => [
+        "name" => "Jane Cash",
+        "url" => "https://flickr.com/photos/ed"
+      ]
+    ],
+    [
+      "path" => "/wp-content/themes/vcc/images/header-photos/4.jpg",
+      "who" => "Jones Jimmy",
+      "trip" => [
+        "title" => "Easter Weekend, March 2015",
+        "path"  => "/2015/03/easter-weekend"
+      ],
+      "photographer" => [
+        "name" => "Josh Davis",
+        "url" => "https://flickr.com/photos/ed"
+      ]
+    ]
+  ]
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -21,7 +73,7 @@
 <div id="page" class="hfeed site">
   <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vcc' ); ?></a>
 
-  <header id="masthead" class="site-header" role="banner">
+  <header id="masthead" class="site-header" role="banner" style="background-image:url(<?= $header_photos[1]['path'] ?>)" data-selected-image-index="0">
     <div class="site-header__content">
       <div class="site-header__content__inner">
         <div class="site-header__branding">
@@ -32,80 +84,30 @@
         <nav id="site-navigation" class="site-header__nav" role="navigation">
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
         </nav><!-- #site-navigation -->
+
+        <div class="site-header__photos-selector">
+          <? foreach ($header_photos as $index => $photo): ?>
+            <a href="#" data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__link" <? if ($index == 0): ?>data-photo-selected<? endif ?>></a>
+          <? endforeach ?>
+        </div>
       </div>
     </div>
 
-    <?
-      $header_photos = [
-        [
-          "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
-          "who" => "Mary, Joe and Jane ",
-          "trip" => [
-            "title" => "Summerday Valley Trip #3, February 2015",
-            "path"  => "/2015/02/summerday-valley"
-          ],
-          "photographer" => [
-            "name" => "Ed Dunens",
-            "url" => "https://flickr.com/photos/ed"
-          ]
-        ],
-        [
-          "path" => "/wp-content/themes/vcc/images/header-photos/2.jpg",
-          "who" => "Elvis and Presley",
-          "trip" => [
-            "title" => "Another Trip #3, January 2015",
-            "path"  => "/2015/01/another-trip"
-          ],
-          "photographer" => [
-            "name" => "Monkey Magic",
-            "url" => "https://flickr.com/photos/ed"
-          ]
-        ],
-        [
-          "path" => "/wp-content/themes/vcc/images/header-photos/3.jpg",
-          "who" => "Jimmy James",
-          "trip" => [
-            "title" => "Queens Birthday Weekend, June 2015",
-            "path"  => "/2015/05/queens-birthday-weekend"
-          ],
-          "photographer" => [
-            "name" => "Jane Cash",
-            "url" => "https://flickr.com/photos/ed"
-          ]
-        ],
-        [
-          "path" => "/wp-content/themes/vcc/images/header-photos/4.jpg",
-          "who" => "Jones Jimmy",
-          "trip" => [
-            "title" => "Easter Weekend, March 2015",
-            "path"  => "/2015/03/easter-weekend"
-          ],
-          "photographer" => [
-            "name" => "Josh Davis",
-            "url" => "https://flickr.com/photos/ed"
-          ]
-        ]
-      ]
-    ?>
-
-    <div class="site-header__photos">
+    <div class="site-header__photos" style="display: none">
       <? foreach ($header_photos as $index => $photo): ?>
         <figure class="site-header__photos__photo" <? if ($index == 0): ?>data-photo-selected<? else: ?>data-photo-hidden<? endif ?>>
           <span class="site-header__photos__photo__img-container">
             <img class="site-header__photos__photo__img" src="<?= $photo["path"] ?>" alt="<?= esc_html($photo["who"]) ?>">
           </span>
-          <figcaption class="header__photos__photo__caption">
-            <span class="header__photos__photo__cred">Photo: <a href="<?= esc_html($photo["photographer"]["url"]) ?>"><?= esc_html($photo["photographer"]["name"]) ?></a></span>
-            <span class="header__photos__photo__title"><?= esc_html($photo["photographer"]["url"]) ?></span>
-            <a href="<?= esc_html($photo["trip"]["path"]) ?>" class="header__photos__photo__trip"><?= esc_html($photo["trip"]["title"]) ?></a>
+          <figcaption class="site-header__photos__photo__caption">
+            <figcaption class="site-header__photos__photo__caption__inner">
+              <span class="site-header__photos__photo__cred">Photo: <a href="<?= esc_html($photo["photographer"]["url"]) ?>"><?= esc_html($photo["photographer"]["name"]) ?></a></span>
+              <span class="site-header__photos__photo__title"><?= esc_html($photo["photographer"]["url"]) ?></span>
+              <a href="<?= esc_html($photo["trip"]["path"]) ?>" class="header__photos__photo__trip"><?= esc_html($photo["trip"]["title"]) ?></a>
+            </figcaption>
           </figcaption>
         </figure>
       <? endforeach ?>
-      <div class="site-header__photos__selector">
-        <? foreach ($header_photos as $index => $photo): ?>
-          <a href="#" data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos__selector__link" <? if ($index == 0): ?>data-photo-selected<? endif ?>></a>
-        <? endforeach ?>
-      </div>
     </div>
   </header>
 
