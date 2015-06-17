@@ -9,9 +9,8 @@ New website for the Victorian Climbing Club :muscle:, by [Tim Lucas](https://git
 Get started:
 
 * `docker-compose build && docker-compose up`
-* `docker exec -i $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -pexample wordpress' < exports/db.sql`
 * `open "http://$(boot2docker ip):8080"`
-* `open "http://$(boot2docker ip):8080"/wp-admin` (admin/rIphs0ach2coP1Cyuc0Ij3soM7rYin4V)
+* `open "http://$(boot2docker ip):8080"/wp-admin`
 
 Start a bash prompt in the container:
 
