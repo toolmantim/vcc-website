@@ -73,7 +73,7 @@
 <div id="page" class="hfeed site">
   <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'vcc' ); ?></a>
 
-  <header id="masthead" class="site-header" role="banner" style="background-image:url(<?= $header_photos[1]['path'] ?>)" data-selected-image-index="0">
+  <header id="masthead" class="site-header" role="banner">
     <div class="site-header__content">
       <div class="site-header__content__inner">
         <div class="site-header__branding">
@@ -93,11 +93,11 @@
       </div>
     </div>
 
-    <div class="site-header__photos" style="display: none">
+    <div class="site-header__photos">
       <? foreach ($header_photos as $index => $photo): ?>
-        <figure class="site-header__photos__photo" <? if ($index == 0): ?>data-photo-selected<? else: ?>data-photo-hidden<? endif ?>>
+        <figure style="background-image: url(<?= $photo["path"] ?>)" class="site-header__photos__photo" <? if ($index == 0): ?>data-photo-selected<? else: ?>data-photo-hidden<? endif ?>>
           <span class="site-header__photos__photo__img-container">
-            <img class="site-header__photos__photo__img" src="<?= $photo["path"] ?>" alt="<?= esc_html($photo["who"]) ?>">
+            <img class="site-header__photos__photo__img" src="<?= $photo["path"] ?>" alt="<?= esc_html($photo["who"]) ?>" style="display: none">
           </span>
           <figcaption class="site-header__photos__photo__caption">
             <figcaption class="site-header__photos__photo__caption__inner">
