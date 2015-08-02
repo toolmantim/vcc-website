@@ -15,6 +15,6 @@ setup:
 
 	# Import the data.
 	docker exec -it $(ID) wp plugin install wordpress-importer --activate
-	docker exec -it $(ID) wp import --authors=create exports/vcc.wordpress.2015-06-07.000.xml
+	docker exec -it $(ID) wp import --authors=create exports/vcc.wordpress.2015-08-02.000.xml
 
 PHONY: setup
