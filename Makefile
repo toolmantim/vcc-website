@@ -13,6 +13,8 @@ setup:
 	# Nuke the menu.
 	docker exec -it $(ID) wp menu delete home-menu; true
 
+	docker exec -it $(ID) wp plugin install custom-post-type-permalinks --activate
+
 	# Import the data.
 	docker exec -it $(ID) wp plugin install wordpress-importer --activate
 	docker exec -it $(ID) wp import --authors=create exports/vcc.wordpress.2015-08-02.000.xml
