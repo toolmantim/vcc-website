@@ -17,13 +17,13 @@
  7. WordPress will then import each of the posts, pages, comments, categories, etc.
     contained in this file into your site.
 -->
-<!-- generator="WordPress/4.2.3" created="2015-08-02 06:18" -->
+<!-- generator="WordPress/4.2.3" created="2015-08-02 10:06" -->
 <rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
   <channel>
 <title>VCC</title>
 <link>http://192.168.99.100:8080</link>
 <description>Just another WordPress site</description>
-<pubDate>Sun, 02 Aug 2015 06:18:58 +0000</pubDate>
+<pubDate>Sun, 02 Aug 2015 10:06:16 +0000</pubDate>
 <language>en-US</language>
 <wp:wxr_version>1.2</wp:wxr_version>
 <wp:base_site_url>http://192.168.99.100:8080</wp:base_site_url>
@@ -49,66 +49,16 @@
   <wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name>
 </wp:category>
 <wp:term>
-  <wp:term_id>6</wp:term_id>
+  <wp:term_id>3</wp:term_id>
   <wp:term_taxonomy>nav_menu</wp:term_taxonomy>
   <wp:term_slug>home-menu</wp:term_slug>
   <wp:term_name><![CDATA[Home menu]]></wp:term_name>
 </wp:term>
 <generator>http://wordpress.org/?v=4.2.3</generator>
 <item>
-  <title>Hello world!</title>
-  <link>http://192.168.99.100:8080/2015/06/07/hello-world/</link>
-  <pubDate>Sun, 07 Jun 2015 00:24:14 +0000</pubDate>
-  <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/?p=1</guid>
-  <description/>
-  <content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>1</wp:post_id>
-  <wp:post_date>2015-06-07 00:24:14</wp:post_date>
-  <wp:post_date_gmt>2015-06-07 00:24:14</wp:post_date_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>hello-world</wp:post_name>
-  <wp:status>trash</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>post</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="uncategorised"><![CDATA[Uncategorised]]></category>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433636873]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:comment>
-    <wp:comment_id>10</wp:comment_id>
-    <wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
-    <wp:comment_author_email/>
-    <wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-    <wp:comment_author_IP/>
-    <wp:comment_date>2015-06-07 00:24:14</wp:comment_date>
-    <wp:comment_date_gmt>2015-06-07 00:24:14</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Hi, this is a comment.
-To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
-    <wp:comment_approved>post-trashed</wp:comment_approved>
-    <wp:comment_type/>
-    <wp:comment_parent>0</wp:comment_parent>
-    <wp:comment_user_id>0</wp:comment_user_id>
-  </wp:comment>
-</item>
-<item>
   <title>Sample Page</title>
   <link>http://192.168.99.100:8080/sample-page/</link>
-  <pubDate>Sun, 07 Jun 2015 00:24:14 +0000</pubDate>
+  <pubDate>Sun, 02 Aug 2015 06:20:34 +0000</pubDate>
   <dc:creator>admin</dc:creator>
   <guid isPermaLink="false">http://192.168.99.100:8080/?page_id=2</guid>
   <description/>
@@ -123,8 +73,8 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 As a new WordPress user, you should go to <a href="http://192.168.99.100:8080/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>2</wp:post_id>
-  <wp:post_date>2015-06-07 00:24:14</wp:post_date>
-  <wp:post_date_gmt>2015-06-07 00:24:14</wp:post_date_gmt>
+  <wp:post_date>2015-08-02 06:20:34</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:34</wp:post_date_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>open</wp:ping_status>
   <wp:post_name>sample-page</wp:post_name>
@@ -144,150 +94,8 @@ As a new WordPress user, you should go to <a href="http://192.168.99.100:8080/wp
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433636875]]></wp:meta_value>
+    <wp:meta_value><![CDATA[1438496436]]></wp:meta_value>
   </wp:postmeta>
-</item>
-<item>
-  <title>Hello world!</title>
-  <link>http://192.168.99.100:8080/2015/05/23/hello-world-2/</link>
-  <pubDate>Sat, 23 May 2015 16:34:07 +0000</pubDate>
-  <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.59.103:8080/?p=1</guid>
-  <description/>
-  <content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>4</wp:post_id>
-  <wp:post_date>2015-05-23 16:34:07</wp:post_date>
-  <wp:post_date_gmt>2015-05-23 16:34:07</wp:post_date_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>hello-world-2</wp:post_name>
-  <wp:status>trash</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>post</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="uncategorised"><![CDATA[Uncategorised]]></category>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433637345]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:comment>
-    <wp:comment_id>3</wp:comment_id>
-    <wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
-    <wp:comment_author_email/>
-    <wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-    <wp:comment_author_IP/>
-    <wp:comment_date>2015-05-23 16:34:07</wp:comment_date>
-    <wp:comment_date_gmt>2015-05-23 16:34:07</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Hi, this is a comment.
-To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
-    <wp:comment_approved>post-trashed</wp:comment_approved>
-    <wp:comment_type/>
-    <wp:comment_parent>0</wp:comment_parent>
-    <wp:comment_user_id>0</wp:comment_user_id>
-    <wp:commentmeta>
-      <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-      <wp:meta_value><![CDATA[1]]></wp:meta_value>
-    </wp:commentmeta>
-    <wp:commentmeta>
-      <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-      <wp:meta_value><![CDATA[1432969284]]></wp:meta_value>
-    </wp:commentmeta>
-  </wp:comment>
 </item>
 <item>
   <title>News</title>
@@ -298,7 +106,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>5</wp:post_id>
+  <wp:post_id>8</wp:post_id>
   <wp:post_date>2015-05-23 16:34:07</wp:post_date>
   <wp:post_date_gmt>2015-05-23 16:34:07</wp:post_date_gmt>
   <wp:comment_status>closed</wp:comment_status>
@@ -512,7 +320,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>6</wp:post_id>
+  <wp:post_id>9</wp:post_id>
   <wp:post_date>2015-05-30 06:58:42</wp:post_date>
   <wp:post_date_gmt>2015-05-30 06:58:42</wp:post_date_gmt>
   <wp:comment_status>closed</wp:comment_status>
@@ -638,7 +446,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>7</wp:post_id>
+  <wp:post_id>10</wp:post_id>
   <wp:post_date>2015-05-30 06:59:23</wp:post_date>
   <wp:post_date_gmt>2015-05-30 06:59:23</wp:post_date_gmt>
   <wp:comment_status>closed</wp:comment_status>
@@ -756,7 +564,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>9</wp:post_id>
+  <wp:post_id>11</wp:post_id>
   <wp:post_date>2015-05-30 06:59:28</wp:post_date>
   <wp:post_date_gmt>2015-05-30 06:59:28</wp:post_date_gmt>
   <wp:comment_status>closed</wp:comment_status>
@@ -874,7 +682,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>11</wp:post_id>
+  <wp:post_id>12</wp:post_id>
   <wp:post_date>2015-05-30 06:59:01</wp:post_date>
   <wp:post_date_gmt>2015-05-30 06:59:01</wp:post_date_gmt>
   <wp:comment_status>closed</wp:comment_status>
@@ -1042,146 +850,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 </item>
 <item>
   <title>Mt Arapiles Trip</title>
-  <link>http://192.168.99.100:8080/2015/06/07/mt-arapiles-trip/</link>
-  <pubDate>Sun, 07 Jun 2015 00:39:25 +0000</pubDate>
-  <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/?p=23</guid>
-  <description/>
-  <content:encoded><![CDATA[A second Learn2Lead Course is being organised for late winter/spring. Check here for updates.
-
-Take the next step. Learn to lead climb, have fun and get home safely.
-Exclusive to VCC members
-6 days qualified instruction
-All equipment provided
-A max 4 students per instructor.
-
-What you will learn:
-Lead climbing using natural protection
-Setting up belay stations and descending from the cliff
-Multi-pitch considerations
-Protecting the second.
-
-Course pre-requisites:
-You should be able to safely belay and second a lead climber outdoors.
-You must be a VCC member.
-
-The cost:$625 per person including GST
-
-Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your place.]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>23</wp:post_id>
-  <wp:post_date>2015-06-07 00:39:25</wp:post_date>
-  <wp:post_date_gmt>2015-06-07 00:39:25</wp:post_date_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>mt-arapiles-trip</wp:post_name>
-  <wp:status>trash</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>post</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="uncategorised"><![CDATA[Uncategorised]]></category>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_edit_last</wp:meta_key>
-    <wp:meta_value><![CDATA[1]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-    <wp:meta_value><![CDATA[publish]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-    <wp:meta_value><![CDATA[1433639403]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title>Mt Arapiles Trip</title>
-  <link>http://192.168.99.100:8080/events/mt-arapiles-trip/</link>
+  <link>http://192.168.99.100:8080/events/2015/06/mt-arapiles-trip/</link>
   <pubDate>Sun, 07 Jun 2015 01:10:28 +0000</pubDate>
   <dc:creator>admin</dc:creator>
   <guid isPermaLink="false">http://192.168.99.100:8080/?post_type=event&amp;p=27</guid>
@@ -1255,19 +924,19 @@ Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your p
 </item>
 <item>
   <title/>
-  <link>http://192.168.99.100:8080/2015/08/02/59/</link>
-  <pubDate>Sun, 02 Aug 2015 05:51:02 +0000</pubDate>
+  <link>http://192.168.99.100:8080/2015/08/02/28/</link>
+  <pubDate>Sun, 02 Aug 2015 06:20:39 +0000</pubDate>
   <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/59/</guid>
+  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/28/</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>59</wp:post_id>
-  <wp:post_date>2015-08-02 05:51:02</wp:post_date>
-  <wp:post_date_gmt>2015-08-02 05:51:02</wp:post_date_gmt>
+  <wp:post_id>28</wp:post_id>
+  <wp:post_date>2015-08-02 06:20:39</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:39</wp:post_date_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>59</wp:post_name>
+  <wp:post_name>28</wp:post_name>
   <wp:status>publish</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>1</wp:menu_order>
@@ -1285,7 +954,7 @@ Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your p
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_menu_item_object_id</wp:meta_key>
-    <wp:meta_value><![CDATA[5]]></wp:meta_value>
+    <wp:meta_value><![CDATA[8]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_menu_item_object</wp:meta_key>
@@ -1310,132 +979,22 @@ Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your p
 </item>
 <item>
   <title/>
-  <link>http://192.168.99.100:8080/2015/08/02/60/</link>
-  <pubDate>Sun, 02 Aug 2015 05:51:02 +0000</pubDate>
+  <link>http://192.168.99.100:8080/2015/08/02/29/</link>
+  <pubDate>Sun, 02 Aug 2015 06:20:39 +0000</pubDate>
   <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/60/</guid>
+  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/29/</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>60</wp:post_id>
-  <wp:post_date>2015-08-02 05:51:02</wp:post_date>
-  <wp:post_date_gmt>2015-08-02 05:51:02</wp:post_date_gmt>
+  <wp:post_id>29</wp:post_id>
+  <wp:post_date>2015-08-02 06:20:39</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:39</wp:post_date_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>60</wp:post_name>
+  <wp:post_name>29</wp:post_name>
   <wp:status>publish</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>4</wp:menu_order>
-  <wp:post_type>nav_menu_item</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="nav_menu" nicename="home-menu"><![CDATA[Home menu]]></category>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_type</wp:meta_key>
-    <wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_object_id</wp:meta_key>
-    <wp:meta_value><![CDATA[9]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_object</wp:meta_key>
-    <wp:meta_value><![CDATA[page]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_target</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_classes</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_xfn</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_url</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title/>
-  <link>http://192.168.99.100:8080/2015/08/02/62/</link>
-  <pubDate>Sun, 02 Aug 2015 05:51:02 +0000</pubDate>
-  <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/62/</guid>
-  <description/>
-  <content:encoded><![CDATA[ ]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>62</wp:post_id>
-  <wp:post_date>2015-08-02 05:51:02</wp:post_date>
-  <wp:post_date_gmt>2015-08-02 05:51:02</wp:post_date_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>62</wp:post_name>
-  <wp:status>publish</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>3</wp:menu_order>
-  <wp:post_type>nav_menu_item</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="nav_menu" nicename="home-menu"><![CDATA[Home menu]]></category>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_type</wp:meta_key>
-    <wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_object_id</wp:meta_key>
-    <wp:meta_value><![CDATA[7]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_object</wp:meta_key>
-    <wp:meta_value><![CDATA[page]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_target</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_classes</wp:meta_key>
-    <wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_xfn</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_menu_item_url</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title/>
-  <link>http://192.168.99.100:8080/2015/08/02/63/</link>
-  <pubDate>Sun, 02 Aug 2015 05:51:02 +0000</pubDate>
-  <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/63/</guid>
-  <description/>
-  <content:encoded><![CDATA[ ]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>63</wp:post_id>
-  <wp:post_date>2015-08-02 05:51:02</wp:post_date>
-  <wp:post_date_gmt>2015-08-02 05:51:02</wp:post_date_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>open</wp:ping_status>
-  <wp:post_name>63</wp:post_name>
-  <wp:status>publish</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>5</wp:menu_order>
   <wp:post_type>nav_menu_item</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
@@ -1474,17 +1033,127 @@ Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your p
   </wp:postmeta>
 </item>
 <item>
+  <title/>
+  <link>http://192.168.99.100:8080/2015/08/02/30/</link>
+  <pubDate>Sun, 02 Aug 2015 06:20:39 +0000</pubDate>
+  <dc:creator>admin</dc:creator>
+  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/30/</guid>
+  <description/>
+  <content:encoded><![CDATA[ ]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>30</wp:post_id>
+  <wp:post_date>2015-08-02 06:20:39</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:39</wp:post_date_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>open</wp:ping_status>
+  <wp:post_name>30</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>3</wp:menu_order>
+  <wp:post_type>nav_menu_item</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="nav_menu" nicename="home-menu"><![CDATA[Home menu]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_type</wp:meta_key>
+    <wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_object_id</wp:meta_key>
+    <wp:meta_value><![CDATA[10]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_object</wp:meta_key>
+    <wp:meta_value><![CDATA[page]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_target</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_classes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_xfn</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_url</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title/>
+  <link>http://192.168.99.100:8080/2015/08/02/31/</link>
+  <pubDate>Sun, 02 Aug 2015 06:20:39 +0000</pubDate>
+  <dc:creator>admin</dc:creator>
+  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/31/</guid>
+  <description/>
+  <content:encoded><![CDATA[ ]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>31</wp:post_id>
+  <wp:post_date>2015-08-02 06:20:39</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:39</wp:post_date_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>open</wp:ping_status>
+  <wp:post_name>31</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>5</wp:menu_order>
+  <wp:post_type>nav_menu_item</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="nav_menu" nicename="home-menu"><![CDATA[Home menu]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_type</wp:meta_key>
+    <wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_object_id</wp:meta_key>
+    <wp:meta_value><![CDATA[12]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_object</wp:meta_key>
+    <wp:meta_value><![CDATA[page]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_target</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_classes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_xfn</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_menu_item_url</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
   <title>Events</title>
   <link>http://192.168.99.100:8080/2015/08/02/events/</link>
-  <pubDate>Sun, 02 Aug 2015 06:15:44 +0000</pubDate>
+  <pubDate>Sun, 02 Aug 2015 06:20:39 +0000</pubDate>
   <dc:creator>admin</dc:creator>
-  <guid isPermaLink="false">http://192.168.99.100:8080/?p=66</guid>
+  <guid isPermaLink="false">http://192.168.99.100:8080/2015/08/02/events/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>66</wp:post_id>
-  <wp:post_date>2015-08-02 06:15:44</wp:post_date>
-  <wp:post_date_gmt>2015-08-02 06:15:44</wp:post_date_gmt>
+  <wp:post_id>32</wp:post_id>
+  <wp:post_date>2015-08-02 06:20:39</wp:post_date>
+  <wp:post_date_gmt>2015-08-02 06:20:39</wp:post_date_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>open</wp:ping_status>
   <wp:post_name>events</wp:post_name>
@@ -1505,7 +1174,7 @@ Contact Michael, the VCC Trip Co-ordinator, as soon as possible to secure your p
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_menu_item_object_id</wp:meta_key>
-    <wp:meta_value><![CDATA[66]]></wp:meta_value>
+    <wp:meta_value><![CDATA[32]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_menu_item_object</wp:meta_key>
