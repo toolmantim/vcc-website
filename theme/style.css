@@ -609,7 +609,7 @@ a {
   .site-header__nav li {
     display: inline; }
     .site-header__nav li + li a {
-      margin-left: -4px; }
+      margin-left: -9px; }
 
 .site-header__photos {
   position: absolute;
