@@ -87,7 +87,7 @@
 
         <div class="site-header__photos-selector">
           <?php foreach ($header_photos as $index => $photo): ?>
-            <button data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__button" <?php if ($index == 0): ?>data-photo-selected<?php endif ?>></button>
+            <button data-photo-index="<?php= $index ?>" title="<?php= esc_html($photo["who"]) ?>" class="site-header__photos-selector__button" <?php if ($index == 0): ?>data-photo-selected<?php endif ?>></button>
           <?php endforeach ?>
         </div>
       </div>
@@ -97,13 +97,13 @@
       <?php foreach ($header_photos as $index => $photo): ?>
         <figure style="background-image: url(<?php= $photo["path"] ?>)" class="site-header__photos__photo" <?php if ($index == 0): ?>data-photo-selected<?php else: ?>data-photo-hidden<?php endif ?>>
           <span class="site-header__photos__photo__img-container">
-            <img class="site-header__photos__photo__img" src="<?= $photo["path"] ?>" alt="<?= esc_html($photo["who"]) ?>" style="display: none">
+            <img class="site-header__photos__photo__img" src="<?php= $photo["path"] ?>" alt="<?php= esc_html($photo["who"]) ?>" style="display: none">
           </span>
           <figcaption class="site-header__photos__photo__caption">
             <figcaption class="site-header__photos__photo__caption__inner">
-              <span class="site-header__photos__photo__cred">Photo: <a href="<?= esc_html($photo["photographer"]["url"]) ?>"><?= esc_html($photo["photographer"]["name"]) ?></a></span>
-              <span class="site-header__photos__photo__title"><?= esc_html($photo["photographer"]["url"]) ?></span>
-              <a href="<?= esc_html($photo["trip"]["path"]) ?>" class="header__photos__photo__trip"><?= esc_html($photo["trip"]["title"]) ?></a>
+              <span class="site-header__photos__photo__cred">Photo: <a href="<?php= esc_html($photo["photographer"]["url"]) ?>"><?php= esc_html($photo["photographer"]["name"]) ?></a></span>
+              <span class="site-header__photos__photo__title"><?php= esc_html($photo["photographer"]["url"]) ?></span>
+              <a href="<?php= esc_html($photo["trip"]["path"]) ?>" class="header__photos__photo__trip"><?php= esc_html($photo["trip"]["title"]) ?></a>
             </figcaption>
           </figcaption>
         </figure>
