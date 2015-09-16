@@ -86,16 +86,16 @@
         </nav><!-- #site-navigation -->
 
         <div class="site-header__photos-selector">
-          <? foreach ($header_photos as $index => $photo): ?>
-            <button data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__button" <? if ($index == 0): ?>data-photo-selected<? endif ?>></button>
-          <? endforeach ?>
+          <?php foreach ($header_photos as $index => $photo): ?>
+            <button data-photo-index="<?= $index ?>" title="<?= esc_html($photo["who"]) ?>" class="site-header__photos-selector__button" <?php if ($index == 0): ?>data-photo-selected<?php endif ?>></button>
+          <?php endforeach ?>
         </div>
       </div>
     </div>
 
     <div class="site-header__photos">
-      <? foreach ($header_photos as $index => $photo): ?>
-        <figure style="background-image: url(<?= $photo["path"] ?>)" class="site-header__photos__photo" <? if ($index == 0): ?>data-photo-selected<? else: ?>data-photo-hidden<? endif ?>>
+      <?php foreach ($header_photos as $index => $photo): ?>
+        <figure style="background-image: url(<?php= $photo["path"] ?>)" class="site-header__photos__photo" <?php if ($index == 0): ?>data-photo-selected<?php else: ?>data-photo-hidden<?php endif ?>>
           <span class="site-header__photos__photo__img-container">
             <img class="site-header__photos__photo__img" src="<?= $photo["path"] ?>" alt="<?= esc_html($photo["who"]) ?>" style="display: none">
           </span>
@@ -107,7 +107,7 @@
             </figcaption>
           </figcaption>
         </figure>
-      <? endforeach ?>
+      <?php endforeach ?>
     </div>
   </header>
 
