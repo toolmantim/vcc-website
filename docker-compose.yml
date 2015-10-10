@@ -5,9 +5,9 @@ wordpress:
   ports:
     - 8080:80
   volumes:
-    - script:/var/www/html/script
-    - theme:/var/www/html/wp-content/themes/vcc
-    - exports:/var/www/html/exports
+    - ./script:/var/www/html/script
+    - ./theme:/var/www/html/wp-content/themes/vcc
+    - ./exports:/var/www/html/exports
 db:
   image: mariadb
   environment:
