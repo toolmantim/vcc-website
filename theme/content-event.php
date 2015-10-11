@@ -13,8 +13,8 @@
 		</div>
 	</header>
 
-	<div class="entry-content">
+	<div class="entry-content" class="event-post">
+    <img class="event-post__map" src="https://maps.googleapis.com/maps/api/staticmap?center=-36.75237,141.83632&zoom=11&size=125x125&maptype=roadmap&markers=color:red%7C-36.75237,141.83632" />
 		<?php the_excerpt(); ?>
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284" />
 	</div>
 </article>
