@@ -4,6 +4,8 @@ set -eu
 
 ssh vcc '\
   cd ~/vcc-website && \
-  git pull && \
-  scp -rp ./theme /var/www/new-vicclimb/wp-content/themes/vcc && \
+  git fetch origin && \
+  git reset --hard origin/master && \
+  cd theme &&
+  cp -van . /var/www/new-vicclimb/wp-content/themes/vcc && \
   echo "VCC theme deployed successfully."'
