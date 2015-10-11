@@ -33,8 +33,9 @@ To start a MySQL prompt:
 
 ## Style Development
 
+Set watch files for change, recompile, and livereload in the browser simply run:
+
 ```bash
-npm install
-./node_modules/.bin/gulp styles
-./node_modules/.bin/gulp styles:watch
+# `npm install` first if you need, then:
+./node_modules/.bin/gulp
 ```
