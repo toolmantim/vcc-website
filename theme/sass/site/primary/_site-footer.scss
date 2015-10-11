@@ -1,3 +1,5 @@
+$footer-max-width: 500px;
+
 .site-footer {
   background-color: $color__link;
   color: white;
@@ -31,10 +33,12 @@
 
 .site-footer__links {
   display: flex;
+  @media (max-width: $footer-max-width) { display: block; }
 }
 
 .site-footer__nav {
   flex: 1;
+  @media (max-width: $footer-max-width) { margin: 40px 0; }
 }
 
 .site-footer__social-nav {
@@ -62,6 +66,8 @@
   $circle-size: 80px;
   text-align: right;
 
+  @media (max-width: $footer-max-width) { text-align: center; }
+
   ul, li { display: inline; }
   a {
     display: inline-block;
@@ -74,6 +80,7 @@
     vertical-align: middle;
     text-align: center;
     margin-left: 10px;
+    margin-bottom: 10px;
     &:hover, &:active { text-decoration: none; }
   }
 }
