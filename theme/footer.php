@@ -11,10 +11,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<div class="site-footer__content__inner">
+        <nav id="footer-site-navigation" class="site-footer__nav" role="navigation">
+          <h1>VCC</h1>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+        </nav>
+		</div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

@@ -406,7 +406,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #47ABFF; }
+  color: #3B98FF; }
   a:visited {
     color: #166BB1; }
   a:hover,
@@ -609,7 +609,7 @@ a {
   .site-header__nav li {
     display: inline; }
     .site-header__nav li + li a {
-      margin-left: -4px; }
+      margin-left: -9px; }
 
 .site-header__photos {
   position: absolute;
@@ -680,6 +680,18 @@ a {
 
 .site-header__photos__photo__cred, .site-header__photos__photo__title, .site-header__photos__photo__trip {
   display: block; }
+
+.site-footer {
+  background-color: #3B98FF;
+  color: white;
+  padding: 5vw; }
+
+.site-footer__content__inner {
+  max-width: 1000px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-left: auto;
+  margin-right: auto; }
 
 #content {
   max-width: 1000px;

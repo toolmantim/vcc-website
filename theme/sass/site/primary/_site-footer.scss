@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: $color__link;
+  color: white;
+  padding: $size__content-height-padding
+}
+
+.site-footer__content__inner {
+  max-width: $size__max-content-width;
+  padding-left: $size__content-width-padding;
+  padding-right: $size__content-width-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
