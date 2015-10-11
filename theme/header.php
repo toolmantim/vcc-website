@@ -9,18 +9,6 @@
 
   $header_photos = [
     [
-      "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
-      "who" => "Mary, Joe and Jane ",
-      "trip" => [
-        "title" => "Summerday Valley Trip #3, February 2015",
-        "path"  => "/2015/02/summerday-valley"
-      ],
-      "photographer" => [
-        "name" => "Ed Dunens",
-        "url" => "https://flickr.com/photos/ed"
-      ]
-    ],
-    [
       "path" => "/wp-content/themes/vcc/images/header-photos/2.jpg",
       "who" => "Elvis and Presley",
       "trip" => [
@@ -29,6 +17,18 @@
       ],
       "photographer" => [
         "name" => "Monkey Magic",
+        "url" => "https://flickr.com/photos/ed"
+      ]
+    ],
+    [
+      "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
+      "who" => "Mary, Joe and Jane ",
+      "trip" => [
+        "title" => "Summerday Valley Trip #3, February 2015",
+        "path"  => "/2015/02/summerday-valley"
+      ],
+      "photographer" => [
+        "name" => "Ed Dunens",
         "url" => "https://flickr.com/photos/ed"
       ]
     ],

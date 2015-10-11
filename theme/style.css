@@ -514,7 +514,7 @@ a {
 .site-header {
   position: relative;
   color: white;
-  height: 90vh;
+  height: 95vh;
   min-height: 400px;
   background-color: #404040; }
   .site-header:before {
@@ -523,8 +523,8 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.66), transparent);
-    background: linear-gradient(rgba(0, 0, 0, 0.66), transparent);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
     height: 40%;
     z-index: 1; }
   .site-header:after {
@@ -533,8 +533,8 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.66));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.66));
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     height: 30%;
     z-index: 1; }
 
@@ -762,7 +762,11 @@ a {
   padding-left: 5vw;
   padding-right: 5vw;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw; }
+  #content h1 {
+    margin-top: 0; }
 
 .sticky {
   display: block; }

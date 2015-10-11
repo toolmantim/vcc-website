@@ -1,7 +1,7 @@
 .site-header {
   position: relative;
   color: white;
-  height: 90vh;
+  height: 95vh;
   min-height: 400px;
   background-color: #404040;
   &:before {
@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.66), rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0));
     height: 40%;
     z-index: 1;
   }
@@ -20,7 +20,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.66));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
     height: 30%;
     z-index: 1;
   }
