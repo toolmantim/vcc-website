@@ -6,6 +6,6 @@ ssh vcc '\
   cd ~/vcc-website && \
   git fetch origin && \
   git reset --hard origin/master && \
-  cd theme &&
-  cp -van . /var/www/new-vicclimb/wp-content/themes/vcc && \
+  cd ~/vcc-website/theme &&
+  rsync -av . /var/www/new-vicclimb/wp-content/themes/vcc && \
   echo "VCC theme deployed successfully."'
