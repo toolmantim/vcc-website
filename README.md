@@ -20,12 +20,25 @@ To start a MySQL prompt:
 
 * `docker exec -it $(docker-compose ps -q db) bash -c 'env TERM=dumb mysql -uroot -pexample'`
 
+## Required plugins
+
+```bash
+for plugin in advanced-custom-fields; do
+  docker exec -it $(docker-compose ps -q wordpress) wp plugin install "$plugin"
+  docker exec -it $(docker-compose ps -q wordpress) wp plugin activate "$plugin"
+done
+```
+
 ## Importing Content
 
 * `docker exec -it $(docker-compose ps -q wordpress) wp theme activate vcc`
 * `docker exec -it $(docker-compose ps -q wordpress) wp plugin install wordpress-importer`
 * `docker exec -it $(docker-compose ps -q wordpress) wp plugin activate wordpress-importer`
 * `docker exec -it $(docker-compose ps -q wordpress) wp import --authors=create exports/file.xml` (add `--skip=nav_menu_item` if re-importing otherwise you'll get dupe items in the main menu)
+
+## Importing Custom Fields
+
+* `docker exec -it $(docker-compose ps -q wordpress) wp import --authors=create exports/advanced-custom-field-export.xml`
 
 ## Exporting Content
 

@@ -1,0 +1,39 @@
+.event-summary {
+  display: block;
+  text-decoration: none;
+  border: 5px solid #CEC7BF;
+  padding: 30px;
+  transition: border-color 150ms;
+  &, &:visited, &:active, &:hover {
+    color: $color__text-screen;
+  }
+  &:active, &:hover {
+    border-color: darken(#CEC7BF, 20%);
+  }
+}
+
+.event-summary__title {
+  clear: none;
+  margin: 0;
+  color: $color__link;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.event-summary__location-and-date {
+  clear: none;
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+
+.event-summary__map {
+  border-radius: 50%;
+  border: 3px solid #CEC7BF;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  float: right
+}
+
+.event-summary__excerpt {
+  p { margin: 0; }
+}
