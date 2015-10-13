@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.3.1" created="2015-10-13 11:44" -->
+<!-- generator="WordPress/4.3.1" created="2015-10-13 12:17" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,21 +26,23 @@
 >
 
 <channel>
-	<title>VCC</title>
-	<link>http://192.168.59.103:8080</link>
+	<title>Victorian Climbing Club</title>
+	<link>http://new.vicclimb.org.au</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Tue, 13 Oct 2015 11:44:01 +0000</pubDate>
+	<pubDate>Tue, 13 Oct 2015 12:17:38 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
-	<wp:base_site_url>http://192.168.59.103:8080</wp:base_site_url>
-	<wp:base_blog_url>http://192.168.59.103:8080</wp:base_blog_url>
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>vcc</wp:author_login><wp:author_email>t@toolmantim.com</wp:author_email><wp:author_display_name><![CDATA[vcc]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
-	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>admin@example.com</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:base_site_url>http://new.vicclimb.org.au</wp:base_site_url>
+	<wp:base_blog_url>http://new.vicclimb.org.au</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>tim</wp:author_login><wp:author_email>t@toolmantim.com</wp:author_email><wp:author_display_name><![CDATA[tim]]></wp:author_display_name><wp:author_first_name><![CDATA[Tim]]></wp:author_first_name><wp:author_last_name><![CDATA[Lucas]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>hywel</wp:author_login><wp:author_email>howsieuk@yahoo.com</wp:author_email><wp:author_display_name><![CDATA[Hywel Rowlands]]></wp:author_display_name><wp:author_first_name><![CDATA[Hywel]]></wp:author_first_name><wp:author_last_name><![CDATA[Rowlands]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>3</wp:author_id><wp:author_login>josh</wp:author_login><wp:author_email>josh.bassett@gmail.com</wp:author_email><wp:author_display_name><![CDATA[Josh Bassett]]></wp:author_display_name><wp:author_first_name><![CDATA[Josh]]></wp:author_first_name><wp:author_last_name><![CDATA[Bassett]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>4</wp:author_id><wp:author_login>andrew</wp:author_login><wp:author_email>webmaster@vicclimb.org.au</wp:author_email><wp:author_display_name><![CDATA[Andrew Clark]]></wp:author_display_name><wp:author_first_name><![CDATA[Andrew]]></wp:author_first_name><wp:author_last_name><![CDATA[Clark]]></wp:author_last_name></wp:author>
 	<item>
 		<title>Event Fields</title>
-		<link>http://192.168.59.103:8080/?acf=acf_event-fields</link>
+		<link>http://new.vicclimb.org.au/</link>
 		<pubDate>Tue, 13 Oct 2015 10:29:26 +0000</pubDate>
-		<dc:creator>vcc</dc:creator>
+		<dc:creator>tim</dc:creator>
 		<guid isPermaLink="false">http://192.168.59.103:8080/?post_type=acf&#038;p=35</guid>
 		<wp:post_id>35</wp:post_id>
 		<wp:post_date>2015-10-13 10:29:26</wp:post_date>
@@ -71,7 +73,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_561cdc5bfbb0f</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_561cdc5bfbb0f";s:5:"label";s:4:"Date";s:4:"name";s:10:"start_date";s:4:"type";s:11:"date_picker";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:11:"date_format";s:6:"yymmdd";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"1";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_561cdc95fbb11";s:8:"operator";s:2:"==";s:5:"value";s:10:"Single Day";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_561cdc5bfbb0f";s:5:"label";s:4:"Date";s:4:"name";s:10:"start_date";s:4:"type";s:11:"date_picker";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:11:"date_format";s:6:"yymmdd";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"1";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_561cdc95fbb11";s:8:"operator";s:2:"==";s:5:"value";s:10:"Single Day";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_561cdc74fbb10</wp:meta_key>
