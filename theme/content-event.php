@@ -11,7 +11,13 @@
 			<img class="event-summary__map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>&zoom=11&size=125x125&maptype=roadmap&markers=color:red%7C<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>" />
 			<h1 class="event-summary__title"><?php the_title(); ?></h1>
 			<h2 class="event-summary__location-and-date">
-				<span class="event-summary__location"><?php echo get_field('location_name'); ?></span>
+				<span class="event-summary__location">
+					<?php $location_name = get_field('location_name'); if ($location_name) : ?>
+						<?php esc_html_e($location_name) ?>
+					<?php else : ?>
+						Missing location
+					<?php endif ; ?>
+				</span>
 				•
 				<span class="event-summary__date">
 					<?php $start_date = DateTime::createFromFormat('Ymd', get_field('start_date')); ?>
