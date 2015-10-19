@@ -18,10 +18,23 @@ get_header(); ?>
         }
       ?>
 
-      <h1>Events</h1>
+      <h1>Upcoming Events</h1>
 
       <?php
-        $args = array('post_type' => 'event', 'posts_per_page' => 10);
+        $args = array(
+          'post_type' => 'event',
+          'posts_per_page' => 10,
+          'meta_key' => 'start_date',
+          'orderby' => 'meta_value_num',
+          'order' => 'ASC',
+          'meta_query' => array(
+            array(
+              'key'   => 'start_date',
+              'compare' => '>=',
+              'value'   => date('Ymd'),
+            )
+          )
+        );
         $result = new WP_Query($args);
 
         while ($result->have_posts()) {
