@@ -86,7 +86,7 @@ add_action( 'after_setup_theme', 'vcc_setup' );
 function vcc_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Homepage Sidebar', 'vcc' ),
-		'id'            => 'homepage-sidebar',
+		'id'            => 'homepage-cliffcare-sidebar',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
