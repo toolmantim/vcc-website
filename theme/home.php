@@ -10,8 +10,6 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-      <?php get_sidebar( 'homepage-cliffcare-sidebar' ); ?>
-
       <h1>News</h1>
 
       <?php
