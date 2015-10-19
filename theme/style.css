@@ -562,7 +562,7 @@ a {
   font-size: 37px;
   line-height: 1;
   margin: 0;
-  padding-top: 10px; }
+  padding-top: 12px; }
   @media (max-width: 700px) {
     .site-header__branding__name {
       font-size: 24px; } }
@@ -576,7 +576,7 @@ a {
     background: transparent url("/wp-content/themes/vcc/images/logo.svg"); }
 
 .site-header__branding__description {
-  font-size: 27px;
+  font-size: 24px;
   margin: 0; }
   @media (max-width: 700px) {
     .site-header__branding__description {
@@ -593,31 +593,22 @@ a {
     padding: 0;
     list-style: none; }
   .site-header__nav a {
-    display: inline-block;
+    display: block;
     color: currentColor;
     border: 4px solid white;
     text-decoration: none;
     padding: 8px 10px;
     line-height: 1;
     -webkit-transition: background-color 150ms;
-            transition: background-color 150ms; }
+            transition: background-color 150ms;
+    background-color: rgba(34, 34, 34, 0.5); }
     .site-header__nav a:hover {
-      background-color: #404040; }
-    @media (max-width: 700px) {
-      .site-header__nav a {
-        display: block; } }
+      background-color: #222; }
   .site-header__nav li {
-    display: inline; }
-    @media (max-width: 700px) {
-      .site-header__nav li {
-        display: block;
-        text-align: center; } }
+    display: block;
+    text-align: center; }
     .site-header__nav li + li a {
-      margin-left: -9px; }
-      @media (max-width: 700px) {
-        .site-header__nav li + li a {
-          margin-left: 0;
-          margin-top: -4px; } }
+      margin-top: -4px; }
 
 .site-header__photos {
   position: absolute;
@@ -643,12 +634,14 @@ a {
   border: 3px solid white;
   border-radius: 50%;
   -webkit-transition: background-color 150ms;
-          transition: background-color 150ms; }
+          transition: background-color 150ms;
+  box-shadow: none; }
   .site-header__photos-selector__button[data-photo-selected], .site-header__photos-selector__button[data-photo-selected]:hover {
     background-color: white; }
   .site-header__photos-selector__button:hover, .site-header__photos-selector__button:active {
     background-color: rgba(255, 255, 255, 0.5);
-    border-color: white; }
+    border-color: white;
+    box-shadow: none; }
   .site-header__photos-selector__button + .site-header__photos-selector__button {
     margin-top: 8px; }
 
@@ -691,6 +684,9 @@ a {
 
 .site-header__photos__photo__cred, .site-header__photos__photo__title, .site-header__photos__photo__trip {
   display: block; }
+  .site-header__photos__photo__cred em, .site-header__photos__photo__title em, .site-header__photos__photo__trip em {
+    font-style: normal;
+    opacity: .75; }
 
 .site-footer {
   background-color: #3B98FF;
