@@ -1,0 +1,46 @@
+body.home {
+  h1, h2, h3, h4, h5, h6 {
+    clear: none;
+  }
+}
+
+.home__cliffcare-sidebar {
+  float: right;
+  width: 20em;
+  border: 5px solid #CEC7BF;
+  padding: 30px;
+  font-size: 16px;
+  ul, li, .widget {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    a {
+      text-decoration: none;
+      color: currentColor;
+      &:first-child { display: none; }
+    }
+  }
+  li {
+    .rsswidget {
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .rssSummary {
+      font-family: $font_copy;
+      font-size: 14px;
+    }
+  }
+
+  .home__cliffcare-sidebar__about {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba($color__text-screen,.25);
+    p { margin: 0; }
+    a { font-weight: bold; text-decoration: none; }
+  }
+}

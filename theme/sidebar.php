@@ -5,11 +5,14 @@
  * @package Victorian Climbing Club
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
+if ( is_active_sidebar( 'homepage-cliffcare-sidebar' ) ) :
 ?>
 
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<div class="home__cliffcare-sidebar" role="complementary">
+	<?php dynamic_sidebar( 'homepage-sidebar' ); ?>
+  <div class="home__cliffcare-sidebar__about">
+    <p><a href="">About CliffCare</a></p>
+  </div>
 </div><!-- #secondary -->
+
+<? endif ?>

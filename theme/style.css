@@ -808,6 +808,44 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
+body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home h6 {
+  clear: none; }
+
+.home__cliffcare-sidebar {
+  float: right;
+  width: 20em;
+  border: 5px solid #CEC7BF;
+  padding: 30px;
+  font-size: 16px; }
+  .home__cliffcare-sidebar ul, .home__cliffcare-sidebar li, .home__cliffcare-sidebar .widget {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .home__cliffcare-sidebar h1 {
+    margin-bottom: 10px;
+    font-size: 24px; }
+    .home__cliffcare-sidebar h1 a {
+      text-decoration: none;
+      color: currentColor; }
+      .home__cliffcare-sidebar h1 a:first-child {
+        display: none; }
+  .home__cliffcare-sidebar li .rsswidget {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; }
+  .home__cliffcare-sidebar li .rssSummary {
+    font-family: "PT Serif", "Georgia", serif;
+    font-size: 14px; }
+  .home__cliffcare-sidebar .home__cliffcare-sidebar__about {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(45, 31, 14, 0.25); }
+    .home__cliffcare-sidebar .home__cliffcare-sidebar__about p {
+      margin: 0; }
+    .home__cliffcare-sidebar .home__cliffcare-sidebar__about a {
+      font-weight: bold;
+      text-decoration: none; }
+
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
