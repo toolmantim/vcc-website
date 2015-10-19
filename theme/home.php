@@ -31,12 +31,26 @@ get_header(); ?>
           'orderby' => 'meta_value_num',
           'order' => 'ASC',
           'meta_query' => array(
-            'relation' => 'OR',
             array(
               'key'     => 'start_date',
               'compare' => '>=',
               'value'   => date('Ymd'),
-            ),
+            )
+          )
+        );
+
+        $result = new WP_Query($args);
+
+        while ($result->have_posts()) {
+          $result->the_post();
+          get_template_part('content-event', get_post_format());
+        }
+
+        $tba_events_args = array(
+          'post_type' => 'event',
+          'posts_per_page' => 10,
+          'order' => 'ASC',
+          'meta_query' => array(
             array(
               'key'   => 'start_date',
               'value' => false,
@@ -44,12 +58,14 @@ get_header(); ?>
             )
           )
         );
-        $result = new WP_Query($args);
 
-        while ($result->have_posts()) {
-          $result->the_post();
+        $tba_events_result = new WP_Query($tba_events_args);
+
+        while ($tba_events_result->have_posts()) {
+          $tba_events_result->the_post();
           get_template_part('content-event', get_post_format());
         }
+
       ?>
     </main>
   </div>

@@ -24,7 +24,7 @@
 					<?php if ($start_date): ?>
 						<?php echo $start_date->format('j M Y'); ?>
 					<?php else : ?>
-						Missing date
+						TBA
 					<?php endif; ?>
 					<?php $end_date = DateTime::createFromFormat('Ymd', get_field('end_date')); ?>
 					<?php if ($end_date): ?>
