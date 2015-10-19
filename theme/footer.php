@@ -20,7 +20,7 @@
         <nav class="site-footer__nav" role="navigation">
           <h1 class="site-footer__heading">Resources</h1>
           <div class="site-footer__nav__secondary">
-            <?php wp_nav_menu( array( 'menu_id' => 'footer-secondary-menu' ) ); ?>
+            <?php wp_nav_menu( array( 'menu_id' => 'footer-menu' ) ); ?>
           </div>
         </nav>
         <nav class="site-footer__social-nav" role="navigation">
