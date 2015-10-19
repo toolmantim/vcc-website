@@ -822,7 +822,7 @@ body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home 
     padding: 0;
     list-style: none; }
   .home__cliffcare-sidebar h1 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 24px; }
     .home__cliffcare-sidebar h1 a {
       text-decoration: none;
@@ -839,7 +839,8 @@ body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home 
   .home__cliffcare-sidebar .home__cliffcare-sidebar__about {
     margin-top: 15px;
     padding-top: 15px;
-    border-top: 1px solid rgba(45, 31, 14, 0.25); }
+    border-top: 1px solid rgba(45, 31, 14, 0.25);
+    font-size: 14px; }
     .home__cliffcare-sidebar .home__cliffcare-sidebar__about p {
       margin: 0; }
     .home__cliffcare-sidebar .home__cliffcare-sidebar__about a {

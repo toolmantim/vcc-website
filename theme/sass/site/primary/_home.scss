@@ -16,7 +16,7 @@ body.home {
     list-style: none;
   }
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 24px;
     a {
       text-decoration: none;
@@ -40,6 +40,7 @@ body.home {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba($color__text-screen,.25);
+    font-size: 14px;
     p { margin: 0; }
     a { font-weight: bold; text-decoration: none; }
   }
