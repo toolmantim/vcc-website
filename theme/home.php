@@ -31,10 +31,16 @@ get_header(); ?>
           'orderby' => 'meta_value_num',
           'order' => 'ASC',
           'meta_query' => array(
+            'relation' => 'OR',
             array(
-              'key'   => 'start_date',
+              'key'     => 'start_date',
               'compare' => '>=',
               'value'   => date('Ymd'),
+            ),
+            array(
+              'key'   => 'start_date',
+              'value' => false,
+              'type'  => 'BOOLEAN'
             )
           )
         );
