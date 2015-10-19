@@ -15,4 +15,4 @@ if ( is_active_sidebar( 'homepage-cliffcare-sidebar' ) ) :
   </div>
 </div><!-- #secondary -->
 
-<? endif ?>
+<?php endif ?>
