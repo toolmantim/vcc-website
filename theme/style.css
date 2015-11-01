@@ -499,7 +499,8 @@ a {
 # Content
 --------------------------------------------------------------*/
 .site-header {
-  background-color: #202020;
+  background: #281403 url("/wp-content/themes/vcc/images/header-background.jpg") top center no-repeat;
+  background-size: 100%;
   color: white;
   padding-bottom: 30px; }
 
@@ -568,7 +569,7 @@ a {
     -webkit-transition: background-color 150ms;
             transition: background-color 150ms; }
     .site-header__nav a:hover {
-      background-color: #222; }
+      background-color: #281403; }
   .site-header__nav li {
     text-align: left; }
     .site-header__nav li + li a {

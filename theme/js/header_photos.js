@@ -1,11 +1,11 @@
 'use strict';
 
 (function () {
-  var photosContainer = document.querySelector('.site-header__photos');
-  var photos = photosContainer.querySelectorAll('.site-header__photos__photo');
+  var photosContainer = document.querySelector('.site-header-home__photos');
+  var photos = photosContainer.querySelectorAll('.site-header-home__photos__photo');
 
-  var photosSelector = document.querySelector('.site-header__photos-selector');
-  var photosButtons = photosSelector.querySelectorAll('.site-header__photos-selector__button');
+  var photosSelector = document.querySelector('.site-header-home__photos-selector');
+  var photosButtons = photosSelector.querySelectorAll('.site-header-home__photos-selector__button');
 
   Array.from(photosButtons).forEach(function(button) {
     button.addEventListener('click', function(event) {

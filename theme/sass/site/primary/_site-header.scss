@@ -1,7 +1,8 @@
 $header-max-width: 700px;
 
 .site-header {
-  background-color: $color__background-dark;
+  background: $color__background-dark url('/wp-content/themes/vcc/images/header-background.jpg') top center no-repeat;
+  background-size: 100%;
   color: white;
   padding-bottom: 30px;
 }
@@ -61,7 +62,7 @@ $header-max-width: 700px;
     padding: 8px 10px;
     line-height: 1;
     transition: background-color 150ms;
-    &:hover { background-color: #222; }
+    &:hover { background-color: $color__background-dark; }
   }
   li {
     text-align: left;
