@@ -9,8 +9,8 @@
 
   $header_photos = [
     [
-      "path" => "/wp-content/themes/vcc/images/header-photos/2.jpg",
-      "who" => "Krissie Piskorz and Liz Casper approaching the crag at Moonarie",
+      "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
+      "who" => "Liz Casper, Marc Beerman and Michelle Tusch chilling out at Moonarie",
       // "trip" => [
       //   "title" => "Summerday Valley Trip #3, February 2015",
       // ],
@@ -19,8 +19,8 @@
       ]
     ],
     [
-      "path" => "/wp-content/themes/vcc/images/header-photos/1.jpg",
-      "who" => "Liz Casper, Marc Beerman and Michelle Tusch chilling out at Moonarie",
+      "path" => "/wp-content/themes/vcc/images/header-photos/2.jpg",
+      "who" => "Michael Dowling, David Focken and Josh Basset atop Gerontian (17) at Bundaleer, Grampians",
       // "trip" => [
       //   "title" => "Summerday Valley Trip #3, February 2015",
       // ],
