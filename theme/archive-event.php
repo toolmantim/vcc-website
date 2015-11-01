@@ -17,16 +17,17 @@ get_header(); ?>
 
     <?php
       $args = array(
-        'post_type'      => 'event',
+        'post_type'              => 'event',
         'posts_per_archive_page' => -1,
-        'orderby'        => 'meta_value_num',
-        'order'          => 'DESC',
-        'meta_key'       => 'start_date',
-        'meta_query'     => array(
+        'orderby'                => 'meta_value_num',
+        'order'                  => 'DESC',
+        'meta_key'               => 'start_date',
+        'meta_query'             => array(
           array(
+            'compare' => '!=',
             'key'     => 'start_date',
-            'compare' => '>=',
-            'value'   => date('Ymd'),
+            'value'   => false,
+            'type'    => 'BOOLEAN'
           )
         )
       );
