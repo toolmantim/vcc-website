@@ -7,13 +7,16 @@ wp core install --admin_user=admin --admin_password=password --admin_email="admi
 wp theme activate vcc
 
 # Nuke the sample posts.
-# wp post delete 1 2; true
+wp post delete 1 2; true
 
 # Nuke the menu.
-# wp menu delete home-menu; true
+wp menu delete home-menu; true
 
-wp plugin install custom-post-type-permalinks --activate
+# Install plugins.
+for plugin in custom-post-type-permalinks advanced-custom-fields wordpress-importer; do
+  wp plugin install "$plugin" --activate
+done
 
 # Import the data.
-wp plugin install wordpress-importer --activate
-wp import --authors=create exports/vcc.wordpress.2015-08-02.000.xml
+wp import --authors=create exports/advanced-custom-field-export.xml
+wp import --authors=create exports/victorianclimbingclub.wordpress.2015-11-01.000.xml
