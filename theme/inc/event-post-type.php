@@ -17,6 +17,7 @@ function register_event_post_type() {
     'public'            => true,
     'has_archive'       => true,
     'show_in_nav_menus' => true,
+    'menu_icon'         => 'dashicons-calendar-alt',
     'labels'            => $labels,
     'rewrite'           => array('slug' => 'events'),
     'supports'          => array('title', 'editor')
