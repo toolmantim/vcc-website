@@ -49,8 +49,10 @@
 <script>
   (function(links) {
     for (var i = 0; i < links.length; i++) {
-      links[i].href = links[i].href.replace("THISDOMAIN", window.location.host);
-      links[i].innerText = links[i].innerText.replace("THISDOMAIN", window.location.host);
+      if (links[i].href.indexOf('THISDOMAIN') != -1) {
+        links[i].href = links[i].href.replace("THISDOMAIN", window.location.host);
+        links[i].innerText = links[i].innerText.replace("THISDOMAIN", window.location.host);
+      }
     }
   })(document.getElementsByTagName("a"));
 </script>
