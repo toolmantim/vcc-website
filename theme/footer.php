@@ -25,16 +25,15 @@
         </nav>
         <nav class="site-footer__social-nav" role="navigation">
           <ul>
-            <li><a href="http://facebook.com/"><img src="/wp-content/themes/vcc/images/facebook.svg" alt="Facebook"></a></li>
-            <li><a href="http://instagram.com/"><img src="/wp-content/themes/vcc/images/instagram.svg" alt="Instagram"></a></li>
-            <li><a href="http://twitter.com/"><img src="/wp-content/themes/vcc/images/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/vicclimb/"><img src="/wp-content/themes/vcc/images/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="https://instagram.com/vicclimbingclub/"><img src="/wp-content/themes/vcc/images/instagram.svg" alt="Instagram"></a></li>
           </ul>
         </nav>
       </div>
       <hr class="site-footer__divider">
       <nav class="site-footer__bottom" role="navigation">
         <div class="site-footer__bottom__left">
-          <a href="mailto:hello@vicclimb.org.au">hello@vicclimb.org.au</a>
+          <a href="mailto:contact@THISDOMAIN">contact@THISDOMAIN</a>
         </div>
         <div class="site-footer__bottom__right">
           <?php get_search_form(); ?>
@@ -45,6 +44,16 @@
 </div>
 
 <?php wp_footer(); ?>
+
+<!-- Fix spam hiding mailto links -->
+<script>
+  (function(links) {
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = links[i].href.replace("THISDOMAIN", window.location.host);
+      links[i].innerText = links[i].innerText.replace("THISDOMAIN", window.location.host);
+    }
+  })(document.getElementsByTagName("a"));
+</script>
 
 </body>
 </html>
