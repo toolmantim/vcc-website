@@ -25,12 +25,12 @@ get_header(); ?>
 
       <?php
         $args = array(
-          'post_type' => 'event',
+          'post_type'      => 'event',
           'posts_per_page' => 10,
-          'meta_key' => 'start_date',
-          'orderby' => 'meta_value_num',
-          'order' => 'ASC',
-          'meta_query' => array(
+          'meta_key'       => 'start_date',
+          'orderby'        => 'meta_value_num',
+          'order'          => 'ASC',
+          'meta_query'     => array(
             array(
               'key'     => 'start_date',
               'compare' => '>=',
@@ -47,10 +47,10 @@ get_header(); ?>
         }
 
         $tba_events_args = array(
-          'post_type' => 'event',
+          'post_type'      => 'event',
           'posts_per_page' => 10,
-          'order' => 'ASC',
-          'meta_query' => array(
+          'order'          => 'ASC',
+          'meta_query'     => array(
             array(
               'key'   => 'start_date',
               'value' => false,
