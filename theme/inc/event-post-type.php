@@ -41,10 +41,11 @@ add_action('after_switch_theme', 'event_rewrite_rules_flush');
 
 function add_event_columns($columns) {
     return array_merge($columns,
-      array('location'     => __('Location'),
-            'start_date'   =>__( 'Event Date'),
-            'duration'     =>__( 'Duration'),
-            'contact_name' =>__( 'Contact Name')));
+      array('start_date'      =>__( 'Event Date'),
+            'location'        => __('Location'),
+            'contact_name'    =>__( 'Contact'),
+            'contact_details' =>__('Contact Details'),
+            'photos' =>__( 'Photos')));
 }
 
 add_filter('manage_event_posts_columns', 'add_event_columns');
@@ -66,19 +67,41 @@ function custom_event_column( $column ) {
     case 'start_date':
       $start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
       $time = get_field('time');
-      if ($start_date && $time) {
-        echo $start_date->format('j M Y') . " @ " . $time;
-      } elseif ($start_date) {
+      $end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
+
+      if ($start_date) {
         echo $start_date->format('j M Y');
       } else {
         echo 'TBA';
       }
+
+      if ($end_date) {
+        echo " — " . $end_date->format('j M Y');
+      }
+
+      if ($time) {
+        echo " @ " . $time;
+      }
+
       break;
-    case 'contact_name':
+    case 'contact':
       echo get_field('contact_name');
       break;
-    case 'duration':
-      echo get_field('duration');
+    case 'contact_details':
+      if (get_field('contact_email')) {
+        echo 'Email';
+      }
+      if (get_field('contact_phone')) {
+        echo 'Phone';
+      }
+      break;
+    case 'photos':
+      $photos_url = get_field('photos_url');
+      if ($photos_url) {
+        echo 'Yes';
+      } else {
+        echo 'No';
+      }
       break;
   }
 }
