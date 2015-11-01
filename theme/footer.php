@@ -33,7 +33,12 @@
       </div>
       <hr class="site-footer__divider">
       <nav class="site-footer__bottom" role="navigation">
-        <a href="mailto:hello@vicclimb.org.au">hello@vicclimb.org.au</a>
+        <div class="site-footer__bottom__left">
+          <a href="mailto:hello@vicclimb.org.au">hello@vicclimb.org.au</a>
+        </div>
+        <div class="site-footer__bottom__right">
+          <?php get_search_form(); ?>
+        </div>
       </nav>
 		</div>
 	</footer>

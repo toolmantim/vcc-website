@@ -708,7 +708,8 @@ a {
       text-decoration: underline; }
 
 .site-footer__divider {
-  border: 0;
+  border: none;
+  background-color: transparent;
   border-bottom: 1px solid white;
   margin-top: 5vw;
   margin-bottom: 2.5vw; }
@@ -773,6 +774,17 @@ a {
 
 .site-footer__nav__secondary {
   font-size: 21px; }
+
+.site-footer__bottom {
+  content: "";
+  display: table;
+  width: 100%; }
+
+.site-footer__bottom__left {
+  float: left; }
+
+.site-footer__bottom__right {
+  float: right; }
 
 #content {
   max-width: 1000px;
@@ -849,6 +861,13 @@ body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home 
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
+  display: none; }
+
+form.search-form input[type="search"] {
+  font-size: 14px;
+  padding: 2px 5px; }
+
+form.search-form input[type="submit"] {
   display: none; }
 
 .widget {

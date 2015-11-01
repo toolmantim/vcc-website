@@ -25,7 +25,8 @@ $footer-max-width: 500px;
 }
 
 .site-footer__divider {
-  border: 0;
+  border: none;
+  background-color: transparent;
   border-bottom: 1px solid white;
   margin-top: $size__content-height-padding;
   margin-bottom: $size__content-height-padding / 2;
@@ -87,4 +88,17 @@ $footer-max-width: 500px;
 
 .site-footer__nav__secondary {
   font-size: 21px;
+}
+
+.site-footer__bottom {
+  @include clearfix;
+  width: 100%;
+}
+
+.site-footer__bottom__left {
+  float: left;
+}
+
+.site-footer__bottom__right {
+  float: right;
 }
