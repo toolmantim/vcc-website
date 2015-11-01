@@ -1,0 +1,191 @@
+$header-max-width: 700px;
+
+.site-header-home {
+  position: relative;
+  color: white;
+  height: 95vh;
+  min-height: 400px;
+  background-color: #404040;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0));
+    height: 40%;
+    z-index: 1;
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+    height: 30%;
+    z-index: 1;
+  }
+}
+
+.site-header-home__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.site-header-home__content__inner,
+.site-header-home__photos__photo__caption__inner {
+  height: 100%;
+  position: relative;
+  max-width: $size__max-content-width;
+  padding-left: $size__content-width-padding;
+  padding-right: $size__content-width-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header-home__branding, .site-header-home__nav {
+  z-index: 2;
+}
+
+.site-header-home__branding {
+  position: relative;
+  z-index: 2;
+  padding-left: 155px + 30px;
+  padding-top: 30px;
+  @media (max-width: $header-max-width) { padding-left: 0; padding-top: 130px; }
+  &, a { color: currentColor; text-decoration: none; }
+}
+
+.site-header-home__branding__name {
+  font-size: 37px;
+  line-height: 1;
+  margin: 0;
+  padding-top: 12px;
+  @media (max-width: $header-max-width) { font-size: 24px; }
+  a:before {
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 155px;
+    height: 90px;
+    background: transparent url('/wp-content/themes/vcc/images/logo.svg');
+  }
+}
+
+.site-header-home__branding__description {
+  font-size: 24px;
+  margin: 0;
+  @media (max-width: $header-max-width) { font-size: 18px; }
+}
+
+.site-header-home__nav {
+  position: absolute;
+  bottom: 40px;
+  z-index: 3;
+  font-size: 21px;
+  font-weight: 700;
+  ul, li { margin: 0; padding: 0; list-style: none; }
+  a {
+    display: block;
+    color: currentColor;
+    border: 4px solid white;
+    text-decoration: none;
+    padding: 8px 10px;
+    line-height: 1;
+    transition: background-color 150ms;
+    background-color: rgba(#222,.5);
+    &:hover { background-color: #222; }
+  }
+  li {
+    display: block;
+    text-align: center;
+    + li a { margin-top: -4px; }
+  }
+}
+
+.site-header-home__photos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  figure { margin: 0; }
+}
+
+.site-header-home__photos-selector {
+  position: absolute;
+  z-index: 3;
+  bottom: 9em;
+  right: $size__content-width-padding;
+}
+
+.site-header-home__photos-selector__button {
+  $button-size: 25px;
+  $border-width: 3px;
+  display: block;
+  background: transparent;
+  padding: 0;
+  width: $button-size - $border-width;
+  height: $button-size - $border-width;
+  border: $border-width solid white;
+  border-radius: 50%;
+  transition: background-color 150ms;
+  box-shadow: none;
+  &[data-photo-selected], &[data-photo-selected]:hover { background-color: white; }
+  &:hover, &:active {
+    background-color: rgba(white, .5);
+    border-color: white;
+    box-shadow: none;
+  }
+  + .site-header-home__photos-selector__button {
+    margin-top: 8px;
+  }
+}
+
+.site-header-home__photos__photo {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: opacity 1s;
+  &[data-photo-selected] { opacity: 1; }
+  &[data-photo-hidden]   { opacity: 0; }
+}
+
+.site-header-home__photos__photo__img-container {
+  position: relative;
+  display: block;
+}
+
+.site-header-home__photos__photo__img {
+  display: block;
+  width: 100%;
+}
+
+.site-header-home__photos__photo__caption {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  z-index: 2;
+  @media (max-width: $header-max-width) { font-size: 14px; }
+  &, a { color: white; }
+}
+
+.site-header-home__photos__photo__cred, .site-header-home__photos__photo__title, .site-header-home__photos__photo__trip {
+  display: block;
+  em {
+    font-style: normal;
+    opacity: .75;
+  }
+}
