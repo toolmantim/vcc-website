@@ -1,11 +1,13 @@
 <?php
 /**
+ * The template for displaying an event summary.
+ *
  * @package Victorian Climbing Club
  */
 ?>
 
 <article id="event-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a class="event-summary" href="<?php echo esc_url( get_permalink() ) ?>">
+	<a class="event-summary" href="<?php echo esc_url(get_permalink()) ?>">
 		<header>
 			<?php $location = get_field('location') ?>
 			<img class="event-summary__map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>&zoom=11&size=125x125&maptype=roadmap&markers=color:red%7C<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>" />
