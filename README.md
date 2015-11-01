@@ -43,4 +43,4 @@ type](https://codex.wordpress.org/Post_Types#Custom_Post_Types). This allows
 them to be handled separately to regular posts.
 
 * `theme/event-summary.php` - The template used to render event summaries on
-  the home page (or the events archive).
+* `theme/event-single.php` - The template used to render a single event.
