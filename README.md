@@ -1,5 +1,7 @@
 # Victorian Climbing Club Website
 
+[![Join the chat at https://gitter.im/toolmantim/vcc-website](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/toolmantim/vcc-website?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 New website for the Victorian Climbing Club :muscle:, by [Tim Lucas](https://github.com/toolmantim) & [Josh Bassett](https://github.com/nullobject)
 
 [![Arapiles by Glenn Tempest](http://i.imgur.com/jynMzO8.jpg)](http://osp.com.au/?p=294) <br> *[Arapiles by Glenn Tempest](http://osp.com.au/?p=294) [(by-nc-nd)](http://creativecommons.org/licenses/by-nc-nd/3.0/)*
