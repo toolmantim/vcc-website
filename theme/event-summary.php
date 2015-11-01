@@ -18,7 +18,7 @@
             <?php esc_html_e($location_name) ?>
           <?php else : ?>
             Missing location
-          <?php endif ; ?>
+          <?php endif; ?>
         </span>
         •
         <span class="event-summary__date">
