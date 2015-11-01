@@ -39,20 +39,20 @@ add_action('after_switch_theme', 'event_rewrite_rules_flush');
 
 // Define the table columns for the events admin
 
-function add_event_columns($columns) {
-    return array_merge($columns,
-      array('start_date'      =>__( 'Event Date'),
-            'location'        => __('Location'),
-            'contact_name'    =>__( 'Contact'),
-            'contact_details' =>__('Contact Details'),
-            'photos' =>__( 'Photos')));
+function add_event_custom_columns($columns) {
+  return array_merge($columns,
+    array('start_date'      =>__( 'Event Date'),
+          'location'        => __('Location'),
+          'contact_name'    =>__( 'Contact'),
+          'contact_details' =>__('Contact Details'),
+          'photos' =>__( 'Photos')));
 }
 
-add_filter('manage_event_posts_columns', 'add_event_columns');
+add_filter('manage_event_posts_columns', 'add_event_custom_columns');
 
 // Define the table columns are printed for the events admin
 
-function custom_event_column( $column ) {
+function event_custom_column( $column ) {
   global $post;
 
   switch ( $column ) {
@@ -106,4 +106,17 @@ function custom_event_column( $column ) {
   }
 }
 
-add_filter('manage_event_posts_custom_column', 'custom_event_column');
+add_filter('manage_event_posts_custom_column', 'event_custom_column');
+
+// Make the columns sortable
+
+function event_sortable_columns($columns) {
+  return array_merge($columns, array(
+    'start_date'   => 'start_date',
+    'location'     => 'location',
+    'contact_name' => 'contact_name',
+    'photos'       => 'photos',
+  ));
+}
+
+add_filter('manage_edit-event_sortable_columns', 'event_sortable_columns');
