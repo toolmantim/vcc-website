@@ -33,3 +33,14 @@ Set watch files for change, recompile, and livereload in the browser simply run:
 # `npm install` first if you need, then:
 ./node_modules/.bin/gulp
 ```
+
+## Custom Theme
+
+### Events
+
+Events are configured as a [custom post
+type](https://codex.wordpress.org/Post_Types#Custom_Post_Types). This allows
+them to be handled separately to regular posts.
+
+* `theme/event-summary.php` - The template used to render event summaries on
+  the home page (or the events archive).

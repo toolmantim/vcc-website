@@ -43,7 +43,7 @@ get_header(); ?>
 
         while ($result->have_posts()) {
           $result->the_post();
-          get_template_part('content-event', get_post_format());
+          get_template_part('event-summary');
         }
 
         $tba_events_args = array(
