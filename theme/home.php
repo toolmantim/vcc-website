@@ -63,7 +63,7 @@ get_header(); ?>
 
         while ($tba_events_result->have_posts()) {
           $tba_events_result->the_post();
-          get_template_part('content-event', get_post_format());
+          get_template_part('event-summary', get_post_format());
         }
 
       ?>
