@@ -37,8 +37,14 @@ Set watch files for change, recompile, and livereload in the browser simply run:
 ### Events
 
 Events are configured as a [custom post
-type](https://codex.wordpress.org/Post_Types#Custom_Post_Types). This allows
-them to be handled separately to regular posts.
+type](https://codex.wordpress.org/Post_Types#Custom_Post_Types).
 
-* `theme/event-summary.php` - The template used to render event summaries on
+* `theme/event-summary.php` - The template used to render event summaries on the home or archive pages.
 * `theme/event-single.php` - The template used to render a single event.
+
+### Articles
+
+News articles are also configured as a custom post type.
+
+* `theme/article-summary.php` - The template used to render article summaries on the home or archive pages.
+* `theme/article-single.php` - The template used to render a single article.

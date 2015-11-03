@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archived events.
+ * The template for displaying the events archive.
  *
  * @package Victorian Climbing Club
  */
