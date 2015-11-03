@@ -5,8 +5,9 @@
  * @package Victorian Climbing Club
  */
 
-// Define our post type
-
+/**
+ * Define a custom post type.
+ */
 function register_event_post_type() {
   $labels = array(
     'name'          => 'Events',
@@ -27,9 +28,10 @@ function register_event_post_type() {
 
 add_action('init', 'register_event_post_type');
 
-// Custom types that have an archive page ("/events") need to flush permalinks
-// like this
-
+/**
+ * Custom post types that have an archive page ("/news") need to flush
+ * permalinks.
+ */
 function event_rewrite_rules_flush() {
   register_event_post_type();
   flush_rewrite_rules();
@@ -37,8 +39,9 @@ function event_rewrite_rules_flush() {
 
 add_action('after_switch_theme', 'event_rewrite_rules_flush');
 
-// Define the table columns for the events admin
-
+/**
+ * Define the table columns for the events admin.
+ */
 function add_event_custom_columns($columns) {
   return array_merge($columns,
     array('start_date'      =>__( 'Event Date'),
@@ -50,8 +53,9 @@ function add_event_custom_columns($columns) {
 
 add_filter('manage_event_posts_columns', 'add_event_custom_columns');
 
-// Define the table columns are printed for the events admin
-
+/**
+ * Define the table columns are printed for the events admin.
+ */
 function event_custom_column( $column ) {
   global $post;
 
@@ -108,8 +112,9 @@ function event_custom_column( $column ) {
 
 add_filter('manage_event_posts_custom_column', 'event_custom_column');
 
-// Make the columns sortable
-
+/**
+ * Make the columns sortable.
+ */
 function event_sortable_columns($columns) {
   return array_merge($columns, array(
     'start_date'   => 'start_date',
