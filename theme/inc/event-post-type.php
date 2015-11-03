@@ -11,7 +11,7 @@ function register_event_post_type() {
   $labels = array(
     'name'          => 'Events',
     'singular_name' => 'Event',
-    'add_new_item'  => 'Add New Event'
+    'edit_item'     => 'Edit Event'
   );
   $args = array(
     'public'            => true,
