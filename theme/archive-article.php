@@ -34,3 +34,5 @@ get_header(); ?>
     <?php endif; ?>
   </main>
 </div>
+
+<?php get_footer(); ?>
