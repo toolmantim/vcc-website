@@ -295,9 +295,7 @@ body {
 
 blockquote, q {
   quotes: "" ""; }
-  blockquote:before,
-  blockquote:after, q:before,
-  q:after {
+  blockquote:before, blockquote:after, q:before, q:after {
     content: ""; }
 
 hr {
@@ -352,7 +350,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -360,8 +358,7 @@ input[type="submit"] {
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active,
-  button:focus,
+  button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -409,14 +406,11 @@ a {
   color: #3B98FF; }
   a:visited {
     color: #166BB1; }
-  a:hover,
-  a:focus,
-  a:active {
+  a:hover, a:focus, a:active {
     color: #67B0FF; }
   a:focus {
     outline: thin dotted; }
-  a:hover,
-  a:active {
+  a:hover, a:active {
     outline: 0; }
 
 /*--------------------------------------------------------------
@@ -429,9 +423,7 @@ a {
   height: 1px;
   width: 1px;
   overflow: hidden; }
-  .screen-reader-text:hover,
-  .screen-reader-text:active,
-  .screen-reader-text:focus {
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -574,6 +566,8 @@ a {
     text-align: left; }
     .site-header__nav li + li a {
       margin-left: -9px; }
+    .site-header__nav li.current-menu-item a {
+      background-color: #281403; }
 
 .site-header-home {
   position: relative;
@@ -995,7 +989,8 @@ form.search-form input[type="submit"] {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none; }
 
