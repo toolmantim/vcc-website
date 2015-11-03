@@ -14,9 +14,18 @@ get_header('home'); ?>
       <h1>News</h1>
 
       <?php
-        while (have_posts()) {
-          the_post();
-          get_template_part('content', get_post_format());
+        $args = array(
+          'nopaging'  => true,
+          'post_type' => 'article',
+          'orderby'   => 'date',
+          'order'     => 'DESC'
+        );
+
+        $result = new WP_Query($args);
+
+        while ($result->have_posts()) {
+          $result->the_post();
+          get_template_part('article', 'summary');
         }
       ?>
 

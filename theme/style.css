@@ -951,6 +951,28 @@ form.search-form input[type="submit"] {
 .widget_search .search-submit {
   display: none; }
 
+.article-summary {
+  display: block;
+  text-decoration: none;
+  padding: 30px; }
+  .article-summary, .article-summary:visited, .article-summary:active, .article-summary:hover {
+    color: #2D1F0E; }
+
+.article-summary__title {
+  clear: none;
+  margin: 0;
+  color: #3B98FF;
+  line-height: 1;
+  margin-bottom: 10px; }
+
+.article-summary__date {
+  clear: none;
+  font-size: 1em;
+  margin: 0 0 10px 0; }
+
+.article-summary__excerpt p {
+  margin: 0; }
+
 .event-summary {
   display: block;
   text-decoration: none;

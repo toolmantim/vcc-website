@@ -7,7 +7,7 @@
 ?>
 
 <article id="event-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <header class="entry-header">
+  <header>
     <?php $location = get_field('location') ?>
     <img class="event-summary__map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>&zoom=11&size=125x125&maptype=roadmap&markers=color:red%7C<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>" />
     <h1 class="event-summary__title"><?php the_title(); ?></h1>
@@ -62,7 +62,7 @@
     </div>
   <?php endif; ?>
 
-  <footer class="entry-footer">
+  <footer>
     <?php vcc_entry_footer(); ?>
   </footer>
 </article>
