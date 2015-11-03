@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying a single event.
+ * The template for displaying a single article.
  *
  * @package Victorian Climbing Club
  */
@@ -12,7 +12,7 @@ get_header(); ?>
     <?php
       while (have_posts()) {
         the_post();
-        get_template_part('event', 'single');
+        get_template_part('article', 'single');
       }
     ?>
 
