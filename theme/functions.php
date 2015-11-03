@@ -141,6 +141,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Load article post type.
+ */
+require get_template_directory() . '/inc/article-post-type.php';
+
+/**
  * Load event post type.
  */
 require get_template_directory() . '/inc/event-post-type.php';
