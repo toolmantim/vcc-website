@@ -149,3 +149,21 @@ require get_template_directory() . '/inc/article-post-type.php';
  * Load event post type.
  */
 require get_template_directory() . '/inc/event-post-type.php';
+
+
+/**
+ * Removes unused items from the admin menu.
+ */
+function remove_unused_menu_items() {
+  remove_menu_page('edit.php'); // Posts
+  remove_menu_page('edit-comments.php'); // Comments
+}
+add_action('admin_menu', 'remove_unused_menu_items');
+
+/**
+ * Removes unused items from the admin bar.
+ */
+function remove_unused_admin_bar_items($wp_admin_bar) {
+  $wp_admin_bar->remove_node('new-content'); // New Content
+}
+add_action('admin_bar_menu', 'remove_unused_admin_bar_items', 999);
