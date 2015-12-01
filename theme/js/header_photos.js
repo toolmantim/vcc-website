@@ -7,6 +7,9 @@
   var photosSelector = document.querySelector('.site-header-home__photos-selector');
   var photosButtons = photosSelector.querySelectorAll('.site-header-home__photos-selector__button');
 
+  // Reference to current timer.
+  var timer;
+
   Array.from(photosButtons).forEach(function(button) {
     button.addEventListener('click', function(event) {
       event.preventDefault();
@@ -14,12 +17,34 @@
     });
   });
 
+  // Select the first photo.
+  selectPhoto(0);
+
   function selectPhoto(index) {
     Array.from(photosButtons).forEach(deselectLink);
     selectLink(photosButtons[index]);
 
     Array.from(photos).forEach(hidePhoto);
     showPhoto(photos[index]);
+
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    timer = setTimeout(selectNextPhoto, 5000);
+  }
+
+  function findSelectedPhoto() {
+    var i = 0;
+    while (i < photos.length && photos[i].getAttribute('data-photo-selected') === null) {
+      i++;
+    }
+    return i;
+  }
+
+  function selectNextPhoto() {
+    var index = findSelectedPhoto();
+    selectPhoto((index + 1) % photos.length);
   }
 
   function hidePhoto(photo) {
