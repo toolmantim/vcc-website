@@ -11,7 +11,7 @@ get_header('home'); ?>
     <main id="main" class="site-main" role="main">
       <?php get_sidebar('homepage-cliffcare-sidebar'); ?>
 
-      <h1>News</h1>
+      <h1 class="home__news__heading">News</h1>
 
       <?php
         $args = array(
@@ -29,7 +29,7 @@ get_header('home'); ?>
         }
       ?>
 
-      <h1>Upcoming Events</h1>
+      <h1 class="home__upcoming-events__heading">Upcoming Events</h1>
 
       <?php
         $args = array(
