@@ -902,6 +902,9 @@ a {
 body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home h6 {
   clear: none; }
 
+body.home .home__upcoming-events__heading {
+  clear: right; }
+
 .home__cliffcare-sidebar {
   float: right;
   width: 20em;
@@ -937,9 +940,6 @@ body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home 
     .home__cliffcare-sidebar .home__cliffcare-sidebar__about a {
       font-weight: bold;
       text-decoration: none; }
-
-.home__upcoming-events__heading {
-  clear: right; }
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {

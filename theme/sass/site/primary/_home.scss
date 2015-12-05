@@ -2,6 +2,9 @@ body.home {
   h1, h2, h3, h4, h5, h6 {
     clear: none;
   }
+  .home__upcoming-events__heading {
+    clear: right;
+  }
 }
 
 .home__cliffcare-sidebar {
@@ -44,8 +47,4 @@ body.home {
     p { margin: 0; }
     a { font-weight: bold; text-decoration: none; }
   }
-}
-
-.home__upcoming-events__heading {
-  clear: right;
 }
