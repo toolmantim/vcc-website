@@ -158,6 +158,10 @@ require get_template_directory() . '/inc/event-post-type.php';
  */
 require get_template_directory() . '/inc/queries.php';
 
+/**
+ * Load iCal feed gen functions
+ */
+require get_template_directory() . '/inc/ical-feed.php';
 
 /**
  * Removes unused items from the admin menu.

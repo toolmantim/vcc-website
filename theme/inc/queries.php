@@ -16,7 +16,7 @@ function vcc_news_query() {
 /**
  * Adds a query function for fetching upcoming events
  */
-function vcc_events_upcoming_query($query_args) {
+function vcc_events_upcoming_query($query_args = array()) {
   $args = array_merge($query_args, array(
     'post_type'      => 'event',
     'meta_key'       => 'start_date',
@@ -34,7 +34,7 @@ function vcc_events_upcoming_query($query_args) {
   return new WP_Query($args);
 }
 
-function vcc_events_tba_query($query_args) {
+function vcc_events_tba_query($query_args = array()) {
   $args = array_merge($query_args, array(
     'post_type'      => 'event',
     'order'          => 'ASC',
