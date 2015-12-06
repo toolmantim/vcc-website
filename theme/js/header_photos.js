@@ -2,6 +2,9 @@
 
 (function () {
   var photosContainer = document.querySelector('.site-header-home__photos');
+
+  if (!photosContainer) return;
+
   var photos = photosContainer.querySelectorAll('.site-header-home__photos__photo');
 
   var photosSelector = document.querySelector('.site-header-home__photos-selector');
