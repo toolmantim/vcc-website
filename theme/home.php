@@ -14,17 +14,10 @@ get_header('home'); ?>
       <h1 class="home__news__heading">News</h1>
 
       <?php
-        $args = array(
-          'nopaging'  => true,
-          'post_type' => 'article',
-          'orderby'   => 'date',
-          'order'     => 'DESC'
-        );
+        $news = vcc_news_query();
 
-        $result = new WP_Query($args);
-
-        while ($result->have_posts()) {
-          $result->the_post();
+        while ($news->have_posts()) {
+          $news->the_post();
           get_template_part('article', 'summary');
         }
       ?>
@@ -32,45 +25,16 @@ get_header('home'); ?>
       <h1 class="home__upcoming-events__heading">Upcoming Events</h1>
 
       <?php
-        $args = array(
-          'post_type'      => 'event',
-          'posts_per_page' => 10,
-          'meta_key'       => 'start_date',
-          'orderby'        => 'meta_value_num',
-          'order'          => 'ASC',
-          'meta_query'     => array(
-            array(
-              'key'     => 'start_date',
-              'compare' => '>=',
-              'value'   => date('Ymd'),
-            )
-          )
-        );
+        $events_upcoming = vcc_events_upcoming_query(array('posts_per_page' => 10));
+        $events_tba = vcc_events_tba_query(array('posts_per_page' => 10));
 
-        $result = new WP_Query($args);
-
-        while ($result->have_posts()) {
-          $result->the_post();
+        while ($events_upcoming->have_posts()) {
+          $events_upcoming->the_post();
           get_template_part('event', 'summary');
         }
 
-        $tba_events_args = array(
-          'post_type'      => 'event',
-          'posts_per_page' => 10,
-          'order'          => 'ASC',
-          'meta_query'     => array(
-            array(
-              'key'   => 'start_date',
-              'value' => false,
-              'type'  => 'BOOLEAN'
-            )
-          )
-        );
-
-        $tba_events_result = new WP_Query($tba_events_args);
-
-        while ($tba_events_result->have_posts()) {
-          $tba_events_result->the_post();
+        while ($events_tba->have_posts()) {
+          $events_tba->the_post();
           get_template_part('event', 'summary');
         }
       ?>

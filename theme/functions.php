@@ -153,6 +153,11 @@ require get_template_directory() . '/inc/article-post-type.php';
  */
 require get_template_directory() . '/inc/event-post-type.php';
 
+/**
+ * Load custom query functions
+ */
+require get_template_directory() . '/inc/queries.php';
+
 
 /**
  * Removes unused items from the admin menu.

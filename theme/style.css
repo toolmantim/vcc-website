@@ -985,7 +985,9 @@ form.search-form input[type="submit"] {
   margin: 0; }
 
 .event-summary {
-  display: block;
+  content: "";
+  display: table;
+  width: 100%;
   text-decoration: none;
   border: 5px solid #CEC7BF;
   padding: 30px;
@@ -1013,7 +1015,7 @@ form.search-form input[type="submit"] {
   border: 3px solid #CEC7BF;
   margin-left: 15px;
   margin-bottom: 15px;
-  float: right; }
+  float: rightl; }
 
 .event-summary__excerpt p {
   margin: 0; }
@@ -1103,5 +1105,20 @@ object {
   overflow: hidden;
   background: url("/wp-content/themes/vcc/images/cliffcare.svg") no-repeat;
   text-indent: -1000px; }
+
+.events__upcoming-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 24px; }
+
+.events__upcoming-header__past {
+  margin-left: auto; }
 
 /*# sourceMappingURL=maps/style.css.map */

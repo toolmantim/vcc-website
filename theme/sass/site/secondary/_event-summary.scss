@@ -1,5 +1,6 @@
 .event-summary {
-  display: block;
+  @include clearfix;
+  width: 100%;
   text-decoration: none;
   border: 5px solid #CEC7BF;
   padding: 30px;
@@ -31,7 +32,7 @@
   border: 3px solid #CEC7BF;
   margin-left: 15px;
   margin-bottom: 15px;
-  float: right
+  float: rightl
 }
 
 .event-summary__excerpt {

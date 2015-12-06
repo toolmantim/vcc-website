@@ -7,79 +7,42 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area events">
   <main id="main" class="site-main" role="main">
     <?php if (have_posts()) : ?>
-      <header class="page-header">
-        <h1 class="page-title">Events</h1>
+      <header class="events__upcoming-header">
+        <h1 id="upcoming">Upcoming Events</h1>
+        <nav class="events__upcoming-header__past">
+          See <a href="#previous">Past Events</a>
+        </nav>
       </header>
 
-      <nav>
-        <a href="#upcoming">Upcoming</a>
-        <a href="#previous">Previous</a>
-      </nav>
-
-      <h2 id="upcoming">Upcoming</h2>
-
       <?php
-        $args = array(
-          'post_type'              => 'event',
-          'posts_per_archive_page' => -1,
-          'orderby'                => 'meta_value_num',
-          'order'                  => 'ASC',
-          'meta_key'               => 'start_date',
-          'meta_query'             => array(
-            'relation' => 'OR',
-            array(
-              'key'     => 'start_date',
-              'compare' => '>=',
-              'value'   => date('Ymd'),
-            ),
-            array(
-              'key'   => 'start_date',
-              'value' => false,
-              'type'  => 'BOOLEAN'
-            )
-          )
-        );
+        $events_upcoming = vcc_events_upcoming_query(array('posts_per_archive_page' => -1));
+        $events_tba = vcc_events_tba_query(array('posts_per_archive_page' => -1));
 
-        $result = new WP_Query($args);
+        while ($events_upcoming->have_posts()) {
+          $events_upcoming->the_post();
+          get_template_part('event', 'summary');
+        }
 
-        while ($result->have_posts()) {
-          $result->the_post();
+        while ($events_tba->have_posts()) {
+          $events_tba->the_post();
           get_template_part('event', 'summary');
         }
       ?>
 
-      <h2 id="previous">Previous</h2>
+      <?php if (!$events_upcoming->found_posts && !$events_tba->found_posts): ?>
+        <p>There’s no scheduled upcoming events</p>
+      <?php endif; ?>
+
+      <h2 id="previous">Past Events</h2>
 
       <?php
-        $args = array(
-          'post_type'              => 'event',
-          'posts_per_archive_page' => -1,
-          'orderby'                => 'meta_value_num',
-          'order'                  => 'DESC',
-          'meta_key'               => 'start_date',
-          'meta_query'             => array(
-            'relation' => 'AND',
-            array(
-              'key'     => 'start_date',
-              'compare' => '<',
-              'value'   => date('Ymd'),
-            ),
-            array(
-              'compare' => '!=',
-              'key'     => 'start_date',
-              'value'   => false,
-              'type'    => 'BOOLEAN'
-            )
-          )
-        );
+        $events_past = vcc_events_past_query(array('posts_per_archive_page' => -1));
 
-        $result = new WP_Query($args);
-
-        while ($result->have_posts()) {
-          $result->the_post();
+        while ($events_past->have_posts()) {
+          $events_past->the_post();
           get_template_part('event', 'summary');
         }
       ?>
