@@ -36,7 +36,7 @@ get_header(); ?>
         <p>There’s no scheduled upcoming events</p>
       <?php endif; ?>
 
-      <h2 id="previous">Past Events</h2>
+      <h1 id="previous">Past Events</h1>
 
       <?php
         $events_past = vcc_events_past_query(array('posts_per_archive_page' => -1));
