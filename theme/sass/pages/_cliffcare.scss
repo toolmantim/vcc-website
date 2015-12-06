@@ -1,0 +1,11 @@
+$logo-width: 200px;
+
+#post-102 {
+  .entry-title {
+    width: $logo-width;
+    height: #{21.755px / 35.989px * $logo-width};
+    overflow: hidden;
+    background: url('/wp-content/themes/vcc/images/cliffcare.svg') no-repeat;
+    text-indent: -1000px;
+  }
+}

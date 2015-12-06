@@ -918,11 +918,11 @@ body.home .home__upcoming-events__heading {
   .home__cliffcare-sidebar h1 {
     margin-bottom: 5px;
     font-size: 24px; }
-    .home__cliffcare-sidebar h1 a {
+    .home__cliffcare-sidebar h1 a:nth-child(1) {
+      display: none; }
+    .home__cliffcare-sidebar h1 a:nth-child(2) {
       text-decoration: none;
       color: currentColor; }
-      .home__cliffcare-sidebar h1 a:first-child {
-        display: none; }
   .home__cliffcare-sidebar li .rsswidget {
     font-size: 16px;
     font-weight: bold;
@@ -1093,5 +1093,15 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+#post-102 .entry-title {
+  width: 200px;
+  height: 120.89805px;
+  overflow: hidden;
+  background: url("/wp-content/themes/vcc/images/cliffcare.svg") no-repeat;
+  text-indent: -1000px; }
 
 /*# sourceMappingURL=maps/style.css.map */

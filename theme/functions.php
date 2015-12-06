@@ -41,6 +41,9 @@ function vcc_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	// Add our custom TinyMCE editor styles
+	add_editor_style();
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *

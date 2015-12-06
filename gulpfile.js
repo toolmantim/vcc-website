@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 
 gulp.task('styles', function () {
-  gulp.src('./theme/sass/style.scss')
+  gulp.src('./theme/sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
@@ -20,5 +20,4 @@ gulp.task('watch', function () {
   gulp.watch('./theme/sass/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['watch'], function() {
-});
+gulp.task('default', ['watch']);
