@@ -283,4 +283,21 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: #3B98FF; }
+  a:visited {
+    color: #166BB1; }
+  a:hover,
+  a:focus,
+  a:active {
+    color: #67B0FF; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover,
+  a:active {
+    outline: 0; }
+
 /*# sourceMappingURL=maps/editor-style.css.map */
