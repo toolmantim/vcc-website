@@ -8,4 +8,5 @@ ssh vcc '\
   git reset --hard origin/master && \
   cd ~/vcc-website/theme &&
   rsync -av . /var/www/new-vicclimb/wp-content/themes/vcc && \
+  mv /var/www/new-vicclimb/wp-content/themes/vcc/events_rss.php /var/www/new-vicclimb/ && \
   echo "VCC theme deployed successfully."'
