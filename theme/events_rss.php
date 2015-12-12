@@ -19,6 +19,8 @@ Revisions:
 
 ******************** */
 
+require_once('wp-config.php');
+
 function clean_string($input, $strip = false) {
 	$string = $input;
 
@@ -108,11 +110,11 @@ function get_query($selection) {
 	return $query;
 }
 
-// DB Config
-$link = mysql_connect('localhost', 'vcc-wp-user', 'eeSheikae6bu3aem')
-    or die('Could not connect: ' . mysql_error());
-mysql_select_db('vcc-wp') or die('Could not select database');
 
+// DB Config
+$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)
+    or die('Could not connect: ' . mysql_error());
+mysql_select_db(DB_NAME) or die('Could not select database');
 
 // Set the content type
 header('Content-Type: application/xml');
