@@ -144,11 +144,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Load article post type.
- */
-require get_template_directory() . '/inc/article-post-type.php';
-
-/**
  * Load event post type.
  */
 require get_template_directory() . '/inc/event-post-type.php';
@@ -167,7 +162,6 @@ require get_template_directory() . '/inc/ical-feed.php';
  * Removes unused items from the admin menu.
  */
 function remove_unused_menu_items() {
-  remove_menu_page('edit.php'); // Posts
   remove_menu_page('edit-comments.php'); // Comments
 }
 add_action('admin_menu', 'remove_unused_menu_items');

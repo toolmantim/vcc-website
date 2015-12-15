@@ -2,6 +2,8 @@
 /**
  * The template for displaying the news archive.
  *
+ * Template Name: News Archive
+ *
  * @package Victorian Climbing Club
  */
 
@@ -16,7 +18,7 @@ get_header(); ?>
 
       <?php
         $args = array(
-          'post_type'              => 'article',
+          'post_type'              => 'post',
           'posts_per_archive_page' => -1,
           'orderby'                => 'date',
           'order'                  => 'DESC'

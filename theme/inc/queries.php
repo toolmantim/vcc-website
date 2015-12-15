@@ -5,7 +5,7 @@
 function vcc_news_query() {
   $args = array(
     'nopaging'  => true,
-    'post_type' => 'article',
+    'post_type' => 'post',
     'orderby'   => 'date',
     'order'     => 'DESC'
   );
