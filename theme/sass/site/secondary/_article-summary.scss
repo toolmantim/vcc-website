@@ -1,9 +1,11 @@
 .article-summary {
-  display: block;
-  text-decoration: none;
   padding: 30px;
+}
+
+.article-summary__title__link {
   &, &:visited, &:active, &:hover {
-    color: $color__text-screen;
+    text-decoration: none;
+    color: $color__link;
   }
 }
 

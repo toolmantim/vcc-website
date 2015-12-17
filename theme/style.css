@@ -963,11 +963,11 @@ form.search-form input[type="submit"] {
   display: none; }
 
 .article-summary {
-  display: block;
-  text-decoration: none;
   padding: 30px; }
-  .article-summary, .article-summary:visited, .article-summary:active, .article-summary:hover {
-    color: #2D1F0E; }
+
+.article-summary__title__link, .article-summary__title__link:visited, .article-summary__title__link:active, .article-summary__title__link:hover {
+  text-decoration: none;
+  color: #3B98FF; }
 
 .article-summary__title {
   clear: none;
