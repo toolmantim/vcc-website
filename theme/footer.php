@@ -34,7 +34,7 @@
       <hr class="site-footer__divider">
       <nav class="site-footer__bottom" role="navigation">
         <div class="site-footer__bottom__left">
-          <a href="mailto:contact@THISDOMAIN">contact@THISDOMAIN</a>
+          Bringing climbers together since 1952
         </div>
         <div class="site-footer__bottom__right">
           <?php get_search_form(); ?>
