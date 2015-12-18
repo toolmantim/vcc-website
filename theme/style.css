@@ -910,6 +910,8 @@ body.home .home__upcoming-events__heading {
   width: 20em;
   border: 5px solid #CEC7BF;
   padding: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   font-size: 16px; }
   .home__cliffcare-sidebar ul, .home__cliffcare-sidebar li, .home__cliffcare-sidebar .widget {
     margin: 0;
