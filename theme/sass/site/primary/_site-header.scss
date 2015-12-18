@@ -66,7 +66,7 @@ $header-max-width: 700px;
   }
   li {
     text-align: left;
-    + li a { margin-left: -9px; }
+    + li a { margin-left: -4px; }
     &.current-menu-item a { background-color: $color__background-dark; }
   }
 }

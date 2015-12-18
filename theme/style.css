@@ -573,7 +573,7 @@ a {
   .site-header__nav li {
     text-align: left; }
     .site-header__nav li + li a {
-      margin-left: -9px; }
+      margin-left: -4px; }
     .site-header__nav li.current-menu-item a {
       background-color: #281403; }
 
