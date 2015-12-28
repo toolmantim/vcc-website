@@ -929,6 +929,9 @@ a {
     line-height: 1;
     margin-bottom: 10px; }
 
+.entry-content {
+  margin-top: 0; }
+
 .sticky {
   display: block; }
 
