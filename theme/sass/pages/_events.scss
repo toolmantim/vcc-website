@@ -1,8 +1,14 @@
 .events__upcoming-header {
-  display: flex;
-  flex-direction: row;
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: row;
+  }
   line-height: 24px;
 }
 .events__upcoming-header__past {
   margin-left: auto;
+  margin-bottom: 20px;
+  @media (min-width: 500px) {
+    margin-bottom: 0;
+  }
 }
