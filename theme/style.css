@@ -926,7 +926,8 @@ a {
   padding-bottom: 5vw; }
   #content h1 {
     margin-top: 0;
-    line-height: 1; }
+    line-height: 1;
+    margin-bottom: 10px; }
 
 .sticky {
   display: block; }
