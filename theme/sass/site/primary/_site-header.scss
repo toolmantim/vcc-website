@@ -47,6 +47,7 @@ $header-max-width: 700px;
 .site-header__branding__description {
   font-size: 24px;
   margin: 0;
+  color: rgba(white, .75);
   @media (max-width: $header-max-width) { font-size: 18px; }
 }
 
