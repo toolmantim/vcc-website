@@ -13,6 +13,13 @@
   }
 }
 
+.event-summary__header {
+  text-align: center;
+  @media (min-width: 501px) {
+    text-align: left;
+  }
+}
+
 .event-summary__title {
   clear: none;
   margin: 0;
@@ -30,9 +37,11 @@
 .event-summary__map {
   border-radius: 50%;
   border: 3px solid #CEC7BF;
-  margin-left: 15px;
+  @media (min-width: 501px) {
+    margin-left: 15px;
+    float: right;
+  }
   margin-bottom: 15px;
-  float: right;
 }
 
 .event-summary__excerpt {

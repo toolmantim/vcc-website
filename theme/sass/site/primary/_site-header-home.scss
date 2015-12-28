@@ -1,39 +1,51 @@
 $header-max-width: 700px;
+$header-photos-max-width: 500px;
 
 .site-header-home {
-  position: relative;
   color: white;
-  height: 95vh;
-  min-height: 400px;
-  background-color: #404040;
+  background-color: #222;
+  text-align: center;
+  @media (min-width: $header-photos-max-width + 1px) {
+    position: relative;
+    height: 95vh;
+    min-height: 400px;
+    background-color: #404040;
+    text-align: left;
+  }
   &:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0));
-    height: 40%;
-    z-index: 1;
+    @media (min-width: $header-photos-max-width + 1px) {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0));
+      height: 40%;
+      z-index: 1;
+    }
   }
   &:after {
-    content: ' ';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
-    height: 30%;
-    z-index: 1;
+    @media (min-width: $header-photos-max-width + 1px) {
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+      height: 30%;
+      z-index: 1;
+    }
   }
 }
 
 .site-header-home__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  @media (min-width: $header-photos-max-width + 1px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .site-header-home__content__inner,
@@ -47,6 +59,10 @@ $header-max-width: 700px;
   margin-right: auto;
 }
 
+.site-header-home__photos__photo__caption__inner {
+  margin-left: 120px;
+}
+
 .site-header-home__branding, .site-header-home__nav {
   z-index: 2;
 }
@@ -56,7 +72,10 @@ $header-max-width: 700px;
   z-index: 2;
   padding-left: 155px + 30px;
   padding-top: 30px;
-  @media (max-width: $header-max-width) { padding-left: 0; padding-top: 130px; }
+  @media (max-width: $header-photos-max-width) {
+    padding-left: 0;
+    padding-top: 10px;
+  }
   &, a { color: currentColor; text-decoration: none; }
 }
 
@@ -65,30 +84,47 @@ $header-max-width: 700px;
   line-height: 1;
   margin: 0;
   padding-top: 12px;
-  @media (max-width: $header-max-width) { font-size: 24px; }
+  @media (max-width: 700px) { font-size: 30px; }
+  @media (max-width: 600px) { font-size: 24px; }
+  @media (max-width: 350px) { font-size: 18px; }
   a:before {
     content: ' ';
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 155px;
+    display: block;
     height: 90px;
-    background: transparent url('/wp-content/themes/vcc/images/logo.svg');
+    background: transparent url('/wp-content/themes/vcc/images/logo.svg') center no-repeat;
+    margin-bottom: 20px;
+    @media (min-width: $header-photos-max-width + 1px) {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 155px;
+      margin-bottom: 0;
+    }
   }
 }
 
 .site-header-home__branding__description {
   font-size: 24px;
   margin: 0;
-  @media (max-width: $header-max-width) { font-size: 18px; }
+  color: rgba(white, .5);
+  @media (min-width: $header-photos-max-width + 1px) { color: inherit; }
+  @media (max-width: 700px) { font-size: 18px; }
+  @media (max-width: 600px) { font-size: 16px; }
+  @media (max-width: 350px) { font-size: 14px; }
 }
 
 .site-header-home__nav {
-  position: absolute;
-  bottom: 40px;
-  z-index: 3;
+  padding-top: $size__content-width-padding;
+  padding-bottom: $size__content-width-padding;
   font-size: 21px;
   font-weight: 700;
+  @media (min-width: $header-photos-max-width + 1px) {
+    position: absolute;
+    bottom: 40px;
+    z-index: 3;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   ul, li { margin: 0; padding: 0; list-style: none; }
   a {
     display: block;
@@ -115,6 +151,10 @@ $header-max-width: 700px;
   right: 0;
   bottom: 0;
   figure { margin: 0; }
+
+  @media (max-width: $header-photos-max-width) {
+    display: none;
+  }
 }
 
 .site-header-home__photos-selector {
@@ -122,6 +162,10 @@ $header-max-width: 700px;
   z-index: 3;
   bottom: 9em;
   right: $size__content-width-padding;
+
+  @media (max-width: $header-photos-max-width) {
+    display: none;
+  }
 }
 
 .site-header-home__photos-selector__button {

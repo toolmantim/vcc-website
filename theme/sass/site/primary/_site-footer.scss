@@ -67,9 +67,10 @@ $footer-max-width: 500px;
   $circle-size: 80px;
   text-align: right;
 
-  @media (max-width: $footer-max-width) { text-align: center; }
+  @media (max-width: $footer-max-width) { text-align: left; }
 
   ul, li { display: inline; }
+  ul li:first-child a { margin-left: 0; }
   a {
     display: inline-block;
     padding: 10px;
@@ -95,10 +96,19 @@ $footer-max-width: 500px;
   width: 100%;
 }
 
-.site-footer__bottom__left {
-  float: left;
+@media (max-width: 500px) {
+  .site-footer__bottom__right {
+    margin-top: 10px;
+  }
 }
 
-.site-footer__bottom__right {
-  float: right;
+@media (min-width: 501px) {
+  .site-footer__bottom__left {
+    float: left;
+  }
+
+  .site-footer__bottom__right {
+    float: right;
+  }
 }
+

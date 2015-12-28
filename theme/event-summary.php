@@ -8,7 +8,7 @@
 
 <article id="event-<?php the_ID(); ?>" <?php post_class(); ?>>
   <a class="event-summary" href="<?php echo esc_url(get_permalink()) ?>">
-    <header>
+    <header class="event-summary__header">
       <?php $location = get_field('location') ?>
       <img class="event-summary__map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>&zoom=11&size=125x125&maptype=roadmap&markers=color:red%7C<?php echo $location['lat']; ?>,<?php echo $location['lng']; ?>" />
       <h1 class="event-summary__title"><?php the_title(); ?></h1>
