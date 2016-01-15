@@ -71,6 +71,12 @@
     </div>
   <?php endif; ?>
 
+  <?php if get_field('requires_level_of_climbing'); ?>
+    <div class="event-summary__what-level">
+      <p>Not sure if you’re novice, intermediate or advanced? <a href="/about/#level">Read about the levels</a> or contact the trip leader.</p>
+    </div>
+  <?php endif; ?>
+
   <footer>
     <?php vcc_entry_footer(); ?>
   </footer>
