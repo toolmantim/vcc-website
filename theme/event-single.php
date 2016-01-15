@@ -46,7 +46,7 @@
   ?>
   <?php if ($contact_name): ?>
     <div class="event-summary__contact">
-      Contact:
+      <strong>Contact:</strong>
       <?php
         $contact_email = get_field('contact_email');
         if ($contact_email) {
@@ -73,7 +73,7 @@
 
   <?php if get_field('requires_level_of_climbing'); ?>
     <div class="event-summary__what-level">
-      <p>Not sure if you’re novice, intermediate or advanced? <a href="/about/#level">Read about the levels</a> or contact the trip leader.</p>
+      <p><strong>Not sure if you’re novice, intermediate or advanced?</strong> <a href="/about/#level">Read about the levels</a> or contact the trip leader.</p>
     </div>
   <?php endif; ?>
 
