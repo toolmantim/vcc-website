@@ -49,8 +49,14 @@
       Contact:
       <?php
         $contact_email = get_field('contact_email');
-        if ($contact_name) {
+        if ($contact_email) {
           echo '<a href="mailto:' . $contact_email . '">' . $contact_name . '</a>';
+        }
+      ?>
+       <?php
+        $contact_phone = get_field('contact_phone');
+        if ($contact_phone) {
+          echo ' ' . $contact_phone;
         }
       ?>
     </div>
