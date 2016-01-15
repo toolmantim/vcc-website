@@ -56,7 +56,7 @@
        <?php
         $contact_phone = get_field('contact_phone');
         if ($contact_phone) {
-          echo ' ' . $contact_phone;
+          echo ' (' . $contact_phone . ')';
         }
       ?>
     </div>
