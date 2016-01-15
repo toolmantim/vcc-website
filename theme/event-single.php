@@ -73,7 +73,7 @@
 
   <?php if (get_field('requires_level_of_climbing')): ?>
     <div class="event-summary__what-level">
-      <p><strong>Not sure if you’re novice, intermediate or advanced?</strong> <a href="/about/#level">Read about the levels</a> or contact the trip leader.</p>
+      <p><strong>Not sure if you’re novice, intermediate or advanced?</strong> <a href="/about/#level">Find your level</a> or contact the trip leader.</p>
     </div>
   <?php endif; ?>
 
