@@ -16,6 +16,7 @@ Revisions:
 - Fixed location field & stuff
 - Improved special character handling to prevent errors in the the xml
 - Modified to use wordpress database
+- Improved stripping for captions
 
 ******************** */
 
@@ -26,6 +27,7 @@ function clean_string($input, $strip = true) {
 
 	if($strip) {
 		$string = strip_tags($string, "<br>");
+		$string = preg_replace('/\[caption.*\].*\[\/caption\]/', '', $string);
 	}
 
 	$string = htmlentities($string, ENT_IGNORE);
