@@ -21,7 +21,7 @@ Revisions:
 
 require_once('wp-config.php');
 
-function clean_string($input, $strip = false) {
+function clean_string($input, $strip = true) {
 	$string = $input;
 
 	if($strip) {
