@@ -15,7 +15,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php if (strpos($_SERVER['SERVER_NAME'],'vicclimb') == FALSE) : ?>
+<?php if (strpos($_SERVER['SERVER_NAME'],'vicclimb') === FALSE) : ?>
   <!-- live reload in local dev only -->
   <script>document.write('<script src="http://localhost:35729/livereload.js?snipver=1"></' + 'script>')</script>
 <?php endif; ?>
