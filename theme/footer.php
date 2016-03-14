@@ -26,7 +26,7 @@
         <nav class="site-footer__social-nav" role="navigation">
           <ul>
             <li><a href="https://www.facebook.com/vicclimb/"><img src="/wp-content/themes/vcc/images/facebook.svg" alt="Facebook"></a></li>
-            <li><a href="https://vicclimbingclub-cliffcare.smugmug.com/Sports/Climbing"><img src="/wp-content/themes/vcc/images/smugmug.svg" alt="Smugmug"></a></li>
+            <li><a href="https://vicclimbingclub-cliffcare.smugmug.com/Sports/Climbing"><img src="/wp-content/themes/vcc/images/photos.svg" alt="Photos on SmugMug"></a></li>
 <!--             <li><a href="https://instagram.com/vicclimbingclub/"><img src="/wp-content/themes/vcc/images/instagram.svg" alt="Instagram"></a></li>
  -->          </ul>
         </nav>
