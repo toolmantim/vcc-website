@@ -37,6 +37,16 @@
     </h2>
   </header>
 
+  <?php
+    $photo_album_url = get_field('photo_album_url');
+  ?>
+  <?php if ($photo_album_url && strlen($photo_album_url) != 0): ?>
+    <div class="event-summary__photos">
+      <p><strong>Check out <a href="<?php echo $photo_album_url ?>">photos from the event</a></p></strong></p>
+    </div>
+  <?php endif; ?>
+
+
   <div class="event-summary__content">
     <?php the_content(); ?>
   </div>
@@ -59,15 +69,6 @@
           echo ' (' . $contact_phone . ')';
         }
       ?>
-    </div>
-  <?php endif; ?>
-
-  <?php
-    $photo_album_url = get_field('photo_album_url');
-  ?>
-  <?php if ($photo_album_url && strlen($photo_album_url) != 0): ?>
-    <div class="event-summary__photos">
-      <p><strong>Check out <a href="<?php echo $photo_album_url ?>">photos from the event</a></p></strong></p>
     </div>
   <?php endif; ?>
 
