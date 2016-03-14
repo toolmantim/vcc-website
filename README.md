@@ -1,5 +1,7 @@
 # Victorian Climbing Club Website
 
+[![Join the chat at https://gitter.im/toolmantim/vcc-website](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/toolmantim/vcc-website?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 New website for the Victorian Climbing Club :muscle:, by [Tim Lucas](https://github.com/toolmantim) & [Josh Bassett](https://github.com/nullobject)
 
 ## Getting Started (OSX)
