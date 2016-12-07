@@ -48,3 +48,10 @@ News articles are also configured as a custom post type.
 
 * `theme/article-summary.php` - The template used to render article summaries on the home or archive pages.
 * `theme/article-single.php` - The template used to render a single article.
+
+### TODO
+
+* Add a photo icon/link to the events index (perhaps remove the Google Maps)
+* Link the Google Maps tiles to Google Maps
+* Print stylesheet on the events page?
+* Install duplicate-post plugin
