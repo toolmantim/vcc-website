@@ -5,5 +5,8 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2"
+  },
+  "scripts": {
+    "gulp": "gulp"
   }
 }
