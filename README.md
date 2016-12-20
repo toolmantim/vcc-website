@@ -8,8 +8,8 @@ Get started:
 
 * `docker-compose build && docker-compose up`
 * `docker exec -it $(docker-compose ps -q wordpress) script/bootstrap`
-* `open "http://$(boot2docker ip):8080"`
-* `open "http://$(boot2docker ip):8080"/wp-admin`
+* `open "http://localhost:8080"`
+* `open "http://localhost:8080/wp-admin"`
 
 Start a bash prompt in the container:
 
