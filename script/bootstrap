@@ -19,4 +19,4 @@ done
 
 # Import the data.
 wp import --authors=create exports/advanced-custom-field-export.xml
-wp import --authors=create exports/victorianclimbingclub.wordpress.2015-11-01.000.xml
+wp import --authors=create exports/victorianclimbingclub.wordpress.2016-12-05.xml
