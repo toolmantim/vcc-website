@@ -45,5 +45,24 @@
 }
 
 .event-summary__excerpt {
-  p { margin: 0; }
+  p {
+    margin: 0;
+    &.event-summary__excerpt__photos {
+      margin-top: 15px;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.event-summary__photos {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  a {
+    text-decoration: none;
+    strong {
+      text-decoration: underline;
+    }
+  }
 }

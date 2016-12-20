@@ -1088,6 +1088,17 @@ form.search-form input[type="submit"] {
 
 .event-summary__excerpt p {
   margin: 0; }
+  .event-summary__excerpt p.event-summary__excerpt__photos {
+    margin-top: 15px; }
+    .event-summary__excerpt p.event-summary__excerpt__photos img {
+      vertical-align: middle; }
+
+.event-summary__photos {
+  font-size: 1.2rem; margin-top: 25px; }
+  .event-summary__photos a {
+    text-decoration: none; }
+    .event-summary__photos a strong {
+      text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
