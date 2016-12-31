@@ -51,7 +51,6 @@ News articles are also configured as a custom post type.
 
 ### TODO
 
-* Add a photo icon/link to the events index (perhaps remove the Google Maps)
 * Link the Google Maps tiles to Google Maps
 * Print stylesheet on the events page?
 * Install duplicate-post plugin
