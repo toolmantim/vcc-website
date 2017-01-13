@@ -28,7 +28,7 @@ To start a MySQL prompt:
 Set watch files for change, recompile, and livereload in the browser simply run:
 
 ```bash
-# `npm install` first if you need, then:
+# `yarn install` first if you need, then:
 ./node_modules/.bin/gulp
 ```
 

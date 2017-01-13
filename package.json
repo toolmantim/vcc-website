@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.3.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2"
+    "gulp": "x",
+    "gulp-autoprefixer": "x",
+    "gulp-livereload": "x",
+    "gulp-sass": "x",
+    "gulp-sourcemaps": "x"
   },
   "scripts": {
     "gulp": "gulp"
