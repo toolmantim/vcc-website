@@ -2,13 +2,13 @@
 
 set -eu
 
-ssh vcc '\
-  cd ~/vcc-website && \
-  git fetch origin && \
-  git reset --hard origin/master && \
+ssh vcc '
+  cd ~/vcc-website &&
+  git fetch origin &&
+  git reset --hard origin/master &&
   cd ~/vcc-website/theme &&
   find ~/vcc-website/theme | xargs chgrp www-deploy &&
   find ~/vcc-website/theme -type f | xargs chmod 664 &&
   find ~/vcc-website/theme -type d | xargs chmod 775 &&
-  rsync -vrlg . /var/www/vicclimb/wp-content/themes/vcc && \
+  rsync -vrlg . /var/www/vicclimb/wp-content/themes/vcc &&
   echo "VCC theme deployed successfully."'
