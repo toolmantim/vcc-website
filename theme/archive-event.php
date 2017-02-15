@@ -13,6 +13,7 @@ get_header(); ?>
       <header class="events__upcoming-header">
         <h1 id="upcoming">Upcoming Events</h1>
         <nav class="events__upcoming-header__past">
+          Subscribe via <a class="rsswidget" href="http://feeds.feedburner.com/vcc/events" target="_blank">RSS</a> <a class="rsswidget" href="http://feeds.feedburner.com/vcc/events" target="_blank"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://vicclimb.org.au/wp-includes/images/rss.png" alt="RSS" /></a><br/>
           See <a href="#previous">Past Events</a>
         </nav>
       </header>

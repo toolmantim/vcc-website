@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Configure the site.
-wp core install --admin_user=admin --admin_password=password --admin_email="admin@example.com" --title=VCC --url="http://192.168.99.100:8080"
+wp core install --admin_user=admin --admin_password=password --admin_email="admin@example.com" --title=VCC --url="http://localhost:8080"
 
 # Activate the VCC theme.
 wp theme activate vcc
@@ -19,4 +19,4 @@ done
 
 # Import the data.
 wp import --authors=create exports/advanced-custom-field-export.xml
-wp import --authors=create exports/victorianclimbingclub.wordpress.2015-11-01.000.xml
+wp import --authors=create exports/victorianclimbingclub.wordpress.2016-12-05.xml

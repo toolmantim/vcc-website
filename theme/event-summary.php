@@ -40,6 +40,13 @@
 
     <div class="event-summary__excerpt">
       <?php the_excerpt(); ?>
+
+      <?php
+        $photo_album_url = get_field('photo_album_url');
+      ?>
+      <?php if ($photo_album_url && strlen($photo_album_url) != 0): ?>
+        <p class="event-summary__excerpt__photos"><img src="/wp-content/themes/vcc/images/photos-black.svg" width="28" alt="Photos"> <strong>Photos available</strong></p>
+      <?php endif; ?>
     </div>
   </a>
 </article>

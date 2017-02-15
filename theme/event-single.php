@@ -42,10 +42,9 @@
   ?>
   <?php if ($photo_album_url && strlen($photo_album_url) != 0): ?>
     <div class="event-summary__photos">
-      <p><strong>Check out <a href="<?php echo $photo_album_url ?>">photos from the event</a></p></strong></p>
+      <p><a href="<?php echo $photo_album_url ?>"><img src="/wp-content/themes/vcc/images/photos-black.svg" width="28" alt="Photos" style="vertical-align:middle"> <strong>Photos from the event</strong></a></p></p>
     </div>
   <?php endif; ?>
-
 
   <div class="event-summary__content">
     <?php the_content(); ?>

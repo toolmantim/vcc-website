@@ -242,9 +242,7 @@ body {
 
 blockquote, q {
   quotes: "" ""; }
-  blockquote:before,
-  blockquote:after, q:before,
-  q:after {
+  blockquote:before, blockquote:after, q:before, q:after {
     content: ""; }
 
 hr {
@@ -290,14 +288,11 @@ a {
   color: #3B98FF; }
   a:visited {
     color: #166BB1; }
-  a:hover,
-  a:focus,
-  a:active {
+  a:hover, a:focus, a:active {
     color: #67B0FF; }
   a:focus {
     outline: thin dotted; }
-  a:hover,
-  a:active {
+  a:hover, a:active {
     outline: 0; }
 
 /*# sourceMappingURL=maps/editor-style.css.map */

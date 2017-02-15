@@ -8,8 +8,8 @@ Get started:
 
 * `docker-compose build && docker-compose up`
 * `docker exec -it $(docker-compose ps -q wordpress) script/bootstrap`
-* `open "http://$(boot2docker ip):8080"`
-* `open "http://$(boot2docker ip):8080"/wp-admin`
+* `open "http://localhost:8080"`
+* `open "http://localhost:8080/wp-admin"`
 
 Start a bash prompt in the container:
 
@@ -28,7 +28,7 @@ To start a MySQL prompt:
 Set watch files for change, recompile, and livereload in the browser simply run:
 
 ```bash
-# `npm install` first if you need, then:
+# `yarn install` first if you need, then:
 ./node_modules/.bin/gulp
 ```
 
@@ -48,3 +48,9 @@ News articles are also configured as a custom post type.
 
 * `theme/article-summary.php` - The template used to render article summaries on the home or archive pages.
 * `theme/article-single.php` - The template used to render a single article.
+
+### TODO
+
+* Link the Google Maps tiles to Google Maps
+* Print stylesheet on the events page?
+* Install duplicate-post plugin
