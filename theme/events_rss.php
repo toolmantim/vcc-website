@@ -85,8 +85,8 @@ function print_record($record) {
 	$pubdate = str_ireplace(",", "", $pubdate);
 	$pubdate = str_ireplace("+", "", $pubdate);
 	$pubdate = str_ireplace(":", "", $pubdate);
-	echo "<link>http://".$_SERVER['SERVER_NAME']."/events/".$record['post_name']."#".$pubdate."</link>\n";
-	echo "<guid>http://".$_SERVER['SERVER_NAME']."/events/".$record['post_name']."#".$pubdate."</guid>\n";
+	echo "<link>https://".$_SERVER['SERVER_NAME']."/events/".$record['post_name']."#".$pubdate."</link>\n";
+	echo "<guid>https://".$_SERVER['SERVER_NAME']."/events/".$record['post_name']."#".$pubdate."</guid>\n";
 	echo "</item>\n";
 	echo "\n";
 }
@@ -123,12 +123,12 @@ header('Content-Type: application/xml');
 
 // Print RSS header
 echo "<?xml version=\"1.0\"?>\n";
-echo "<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n";
+echo "<rss version=\"2.0\" xmlns:atom=\"https://www.w3.org/2005/Atom\">\n";
 echo "<channel>\n";
 echo "<title>VCC Events</title>\n";
 echo "<description>The Victorian Climbing Club runs a variety of climbing trips to many different locations, primarily around Victoria but with many trips further abroad.  Other more social events like movie nights and the annual dinner will also appear here as well as details of CliffCare working bees.  Subscribe to stay up to date with the latest VCC events.</description>\n";
-echo "<link>http://vicclimb.org.au/events</link>\n";
-echo "<atom:link href=\"http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<link>https://vicclimb.org.au/events</link>\n";
+echo "<atom:link href=\"https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 // Records today or in the future
 $date = date("Ymd");
